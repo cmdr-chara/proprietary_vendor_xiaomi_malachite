@@ -1,0 +1,376 @@
+/*
+phgType (refer to: mihal/Photographer.h)
+format: (refer to: system/core/include/system/graphics-base-vx.x.h)
+
+Photographer_SIMPLE = 0,
+Photographer_HDR = 1,
+Photographer_SR = 2,
+Photographer_SN = 3,
+Photographer_BURST = 4,
+Photographer_HDRSR = 5,
+Photographer_FUSION = 6,
+Photographer_SR_FUSION = 7,
+Photographer_VENDOR_MFNR = 8,
+Photographer_MIHAL_MFNR = 9,
+Photographer_BOKEH = 10,
+Photographer_BOKEH_MD = 11,
+Photographer_BOKEH_HDR = 12,
+Photographer_BOKEH_SE = 13,
+Photographer_BOKEH_MD_SN = 14,
+Photographer_BOKEH_MD_HDR = 15,
+Photographer_BOKEH_MIHAL_MFNR = 16,
+Photographer_BOKEH_VENDOR_MFNR = 17,
+Photographer_SINGLE_BOKEH_MIHAL_MFNR = 18,
+Photographer_SINGLE_BOKEH_VENDOR_MFNR = 19,
+Photographer_SINGLE_BOKEH = 20,
+Photographer_MANUAL = 21,
+Photographer_AINR = 22,
+Photographer_HD_AINR = 23,
+Photographer_HD_UPSCALE = 24,
+Photographer_HD_MFNR = 25,
+Photographer_HD_REMOSAIC_MFNR = 26,
+Photographer_HD_REMOSAIC_MFNR_HDR = 27,
+Photographer_DEPTH_EXTEND = 28,
+Photographer_MANUALRAW = 29,
+Photographer_HD_MANUALRAW = 30,
+Photographer_HDR_RAW = 31,
+Photographer_HDR_STAGGER_RAW = 32,
+Photographer_HD_REMOSAIC_HDR = 33,
+Photographer_SINGLE_BOKEH_HDR = 34,
+Photographer_DSAC_BOKEH = 35,
+Photographer_AINR_FLASH = 36,
+Photographer_QUAD_RAW_SR = 37,
+Photographer_HD_HDR_RAW = 38,
+PHOTOGRAPHER_HD_REMOSAIC_SINGLE = 39,
+
+HALPixelFormatRaw16 = 32
+eImgFmt_NV12 = 4096,
+eImgFmt_MTK_YUV_P010 = 8217, // R1/R3 buffer format
+eImgFmt_BAYER10 = 8705,
+eImgFmt_BAYER14 = 8707,
+*******************************************************
+prevType (refer to: mihal/Previewer.h)
+
+PREVIEWER_MIHAL_AI_CAP_PREV = 0,
+PREVIEWER_MIHAL_VIDEO_NIGHT_PREV = 1,
+PREVIEWER_MIHAL_SIMPLE_PREV = 2,
+PREVIEWER_MIHAL_MOVIE_PREV = 3,
+PREVIEWER_MIHAL_MOVIE_CINELOOK_PREV = 4,
+PREVIEWER_MIHAL_MOVIE_UFBC_PREV = 5,
+*/
+
+{
+    "RoleIdList": {
+        "CameraRole" : [
+            {
+                // RoleIdRearWide
+                "RoleId" : 0,
+                // Burst capture num limit
+                "BurstCaptureNumLimit" : 50,
+                "PhgStreamFormat": [
+                    {
+                        "phgType" : 0,
+                        "format" : [8705]
+                    },
+                    {
+                        "phgType" : 1,
+                        "format" : [8705, 8217]
+                    },
+                    {
+                        "phgType" : 2,
+                        "format" : [8705]
+                    },
+                    {
+                        "phgType" : 3,
+                        "format" : [32]
+                    },
+                    {
+                        "phgType" : 4,
+                        "format" : [8705]
+                    },
+                    {
+                        "phgType" : 5,
+                        "format" : [8705]
+                    },
+                    {
+                        "phgType" : 8,
+                        "format" : [8705]
+                    },
+                    {
+                        "phgType" : 9,
+                        "format" : [8705, 8217]
+                    },
+                    {
+                        "phgType" : 22,
+                        "format" : [8705]
+                    },
+                    {
+                        "phgType" : 24,
+                        "format" : [8705, 8217]
+                    },
+                    {
+                        "phgType" : 25,
+                        "format" : [8705, 8217]
+                    },
+                    {
+                        "phgType" : 26,
+                        "format" : [8705, 8217]
+                    },
+                    {
+                        "phgType" : 27,
+                        "format" : [8705, 8217]
+                    },
+                    {
+                        "phgType" : 31,
+                        "format" : [32]
+                    },
+                    {
+                        "phgType" : 32,
+                        "format" : [32, 32, 32]
+                    },
+                    {
+                        "phgType" : 33,
+                        "format" : [32]
+                    },
+                    {
+                        "phgType" : 37,
+                        "format" : [32]
+                    },
+                    {
+                        "phgType" : 38,
+                        "format" : [32]
+                    },
+                    {
+                        "phgType" : 39,
+                        "format" : [32]
+                    }
+                ],
+                "PrevStreamFormat": [
+                    {
+                        "prevType": 0,
+                        "format": [4096, 8222, 538982489]
+                    },
+                    {
+                        "prevType": 1,
+                        "format": [32]
+                    },
+                    {
+                        "prevType": 2,
+                        "format": [54, 8222, 538982489]
+                    },
+                    {
+                        "prevType": 3,
+                        "format": [4096, 8222, 538982489]
+                    },
+                    {
+                        "prevType": 4,
+                        "format": [4096, 8222, 538982489]
+                    },
+                    {
+                        "prevType": 5,
+                        "format": [9476, 8222, 538982489]
+                    }
+                ]
+            },
+            {
+                // RoleIdFront
+                "RoleId" : 1,
+                "PhgStreamFormat": [
+                    {
+                        "phgType" : 0,
+                        "format" : [8705]
+                    },
+                    {
+                        "phgType" : 1,
+                        "format" : [8705, 8217]
+                    },
+                    {
+                        // rawSn
+                        "phgType" : 3,
+                        "format" : [32]
+                    },
+                    {
+                        "phgType" : 9,
+                        "format" : [8705, 8217]
+                    },
+                    {
+                        "phgType" : 10,
+                        "format" : [8705, 8217]
+                    },
+                    {
+                        "phgType" : 18,
+                        "format" : [8705, 8217]
+                    },
+                    {
+                        "phgType" : 20,
+                        "format" : [8705]
+                    },
+                    {
+                        "phgType" : 31,
+                        "format" : [32]
+                    },
+                    {
+                        "phgType" : 34,
+                        "format" : [32]
+                    }
+                ],
+                "PrevStreamFormat": [
+                    {
+                        "prevType": 0,
+                        "format": [4096, 8222, 538982489]
+                    },
+                    {
+                        "prevType": 2,
+                        "format": [54, 8222, 538982489]
+                    }
+                ]
+            },
+            {
+                // RoleIdRearUltra
+                "RoleId" : 21,
+                // Burst capture num limit
+                "BurstCaptureNumLimit" : 30,
+                "PhgStreamFormat": [
+                    {
+                        "phgType" : 0,
+                        "format" : [8705]
+                    },
+                    {
+                        "phgType" : 1,
+                        "format" : [8705, 8217]
+                    },
+                    {
+                        "phgType" : 3,
+                        "format" : [32]
+                    },
+                    {
+                        "phgType" : 4,
+                        "format" : [8705]
+                    },
+                    {
+                        "phgType" : 8,
+                        "format" : [8705]
+                    },
+                    {
+                        "phgType" : 9,
+                        "format" : [8705, 8217]
+                    },
+                    {
+                        "phgType": 22,
+                        "format": [8705]
+                    },
+                    {
+                        "phgType" : 31,
+                        "format" : [32]
+                    }
+                ],
+                "PrevStreamFormat": [
+                    {
+                        "prevType": 0,
+                        "format": [4096, 8222, 538982489]
+                    }
+                ]
+            },
+            {
+                // RoleIdRearMacro
+                "RoleId" : 22,
+                "PhgStreamFormat": [
+                    {
+                        "phgType" : 0,
+                        "format" : [8705]
+                    },
+                    {
+                        "phgType" : 9,
+                        "format" : [8705, 8217]
+                    }
+                ],
+                "PrevStreamFormat": [
+                    {
+                        "prevType": 0,
+                        "format": [4096, 8222, 538982489]
+                    }
+                ]
+            },
+            {
+                // RoleIdRearBokeh2x
+                "RoleId" : 61,
+                "PhgStreamFormat": [
+                    {
+                        "phgType" : 10,
+                        "format" : [8705, 8705, 8217]
+                    },
+                    {
+                        "phgType" : 11,
+                        "format" : [8705, 8705, 8217]
+                    },
+                    {
+                        "phgType" : 12,
+                        "format" : [32, 32]
+                    },
+                    {
+                        "phgType" : 13,
+                        "format" : [32, 32]
+                    },
+                    {
+                        "phgType" : 14,
+                        "format" : [32, 32]
+                    },
+                    {
+                        "phgType" : 15,
+                        "format" : [32, 32]
+                    },
+                    {
+                        "phgType" : 16,
+                        "format" : [8705, 8705, 8217]
+                    }
+                ],
+                "PrevStreamFormat": [
+                    {
+                        "prevType": 0,
+                        "format": [4096, 8222, 538982489]
+                    }
+                ]
+            },
+            {
+                // RoleIdRearBokeh1x
+                "RoleId" : 63,
+                "PhgStreamFormat": [
+                    {
+                        "phgType" : 10,
+                        "format" : [8705, 8705, 8217]
+                    },
+                    {
+                        "phgType" : 11,
+                        "format" : [8705, 8705, 8217]
+                    },
+                    {
+                        "phgType" : 12,
+                        "format" : [32, 32]
+                    },
+                    {
+                        "phgType" : 13,
+                        "format" : [32, 32]
+                    },
+                    {
+                        "phgType" : 14,
+                        "format" : [32, 32]
+                    },
+                    {
+                        "phgType" : 15,
+                        "format" : [32, 32]
+                    },
+                    {
+                        "phgType" : 16,
+                        "format" : [8705, 8705, 8217]
+                    }
+                ],
+                "PrevStreamFormat": [
+                    {
+                        "prevType": 0,
+                        "format": [4096, 8222, 538982489]
+                    }
+                ]
+            }
+        ]
+    }
+}

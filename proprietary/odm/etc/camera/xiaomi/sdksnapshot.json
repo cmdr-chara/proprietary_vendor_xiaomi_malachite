@@ -1,0 +1,59 @@
+{
+    "PipelineName": "SdkSnapshot",
+    "NodesList": {
+        "Node": [
+        {
+	        "NodeName": "com.xiaomi.plugin.virtual",
+	        "NodeInstance": "virtualInstanceSdk",
+	        "NodeProperty":[
+	        {
+	            "NodePropertyName":"NodeMask",
+	            "NodePropertyValue":512
+	        }
+	        ]
+        },
+        {
+	        "NodeName": "com.xiaomi.plugin.hwproc",
+	        "NodeInstance": "Yuv2YuvScaleInstanceSdk"
+        }
+        ]
+    },
+    "PortLinkages": {
+        "Link": [
+            {
+                "SrcPort": {
+                    "PortId": 0,
+                    "NodeInstance": "SourceBuffer0"
+                },
+                "DstPort": {
+                    "PortId": 0,
+                    "NodeInstance": "virtualInstanceSdk",
+                    "PortFormat": "YUV420_NV21"
+                }
+            },
+            {
+                "SrcPort": {
+                    "PortId": 0,
+                    "NodeInstance": "virtualInstanceSdk",
+                    "PortFormat": "YUV420_NV21"
+                 },
+                "DstPort": {
+                    "PortId": 0,
+                    "NodeInstance": "Yuv2YuvScaleInstanceSdk",
+                    "PortFormat": "YUV420_NV21"
+                }
+	        },
+            {
+                "SrcPort": {
+                    "PortId": 0,
+                    "NodeInstance": "Yuv2YuvScaleInstanceSdk",
+                    "PortFormat": "YUV420_NV21"
+                },
+                "DstPort": {
+                    "PortId": 0,
+                    "NodeInstance": "SinkBuffer0"
+                }
+	        }
+        ]
+    }
+}

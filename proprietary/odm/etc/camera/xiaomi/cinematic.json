@@ -1,0 +1,252 @@
+{
+    "PipelineName": "Cinematics",
+    "NodesList": {
+        "Node": [
+            {
+                "NodeName": "com.xiaomi.plugin.hwstream",
+                "NodeInstance": "VSEMCNRInstance0",
+                "NodeProperty": [
+                    {
+                        "NodePropertyName": "NodeMask",
+                        "NodePropertyValue": 2
+                    }
+                ]
+            },
+            {
+                "NodeName": "com.xiaomi.plugin.jiganvideobokeh",
+                "NodeInstance": "JGVideoBokehInstance"
+            },
+            {
+                "NodeName": "com.xiaomi.plugin.virtual",
+                "NodeInstance": "virtualInstance0",
+                "NodeProperty":[
+                    {
+                         "NodePropertyName":"NodeMask",
+                         "NodePropertyValue":512
+                    }
+                ]
+            },
+            {
+                "NodeName": "com.xiaomi.plugin.asdasync",
+                "NodeInstance": "AsdAsyncInstance0",
+                "NodeProperty": [
+                    {
+                        "NodePropertyName": "NodeMask",
+                        "NodePropertyValue": 1
+                    }
+                ]
+            },
+            {
+                "NodeName": "com.xiaomi.plugin.mihisv2",
+                "NodeInstance": "HISV2Instance0",
+                "NodeProperty": [
+                    {
+                        "NodePropertyName": "NodeMask",
+                        "NodePropertyValue": 1
+                    }
+                ]
+            },
+            {
+                "NodeName": "com.xiaomi.plugin.mihisv3",
+                "NodeInstance": "HISV3Instance0",
+                "NodeProperty": [
+                    {
+                        "NodePropertyName": "NodeMask",
+                        "NodePropertyValue": 8193
+                    }
+                ]
+            },
+            {
+                "NodeName": "com.xiaomi.plugin.hwstream",
+                "NodeInstance": "WPEWARPPQInstance0",
+                "NodeProperty": [
+                    {
+                        "NodePropertyName": "NodeMask",
+                        "NodePropertyValue": 130
+                    }
+                ]
+            },
+            {
+                "NodeName": "com.xiaomi.plugin.hwstream",
+                "NodeInstance": "WPEWARPPQInstance1",
+                "NodeProperty": [
+                    {
+                        "NodePropertyName": "NodeMask",
+                        "NodePropertyValue": 2
+                    }
+                ]
+            },
+            {
+                "NodeName": "com.xiaomi.plugin.videofilter",
+                "NodeInstance": "VFInstance0"
+            },
+            {
+                "NodeName": "",
+                "NodeInstance": "virtualSinkbuffer",
+                "NodeProperty":[
+                    {
+                         "NodePropertyName":"NodeMask",
+                         "NodePropertyValue":1536
+                    }
+                ]
+            },
+            {
+                "NodeName": "com.xiaomi.plugin.hwjpeg",
+                "NodeInstance": "JpegInstance"
+            }
+        ]
+    },
+    "PortLinkages": {
+        "Link": [
+            {
+                "SrcPort": {
+                    "PortId": 0,
+                    "NodeInstance": "SourceBuffer"
+                },
+                "DstPort": {
+                    "PortId": 0,
+                    "NodeInstance": "VSEMCNRInstance0",
+                    "PortFormat": "YUV420_NV12"
+                }
+            },
+            {
+                "SrcPort": {
+                    "PortId": 0,
+                    "NodeInstance": "VSEMCNRInstance0",
+                    "PortFormat": "YUV420_NV12"
+                },
+                "DstPort": {
+                    "PortId": 0,
+                    "NodeInstance": "JGVideoBokehInstance",
+                    "PortFormat": "YUV420_NV12"
+                }
+            },
+            {
+                "SrcPort": {
+                    "PortId": 0,
+                    "NodeInstance": "JGVideoBokehInstance",
+                    "PortFormat": "YUV420_NV12"
+                },
+                "DstPort": {
+                    "PortId": 0,
+                    "NodeInstance": "VFInstance0",
+                    "PortFormat": "YUV420_NV12"
+                }
+            },
+            {
+                "SrcPort": {
+                    "PortId": 0,
+                    "NodeInstance": "VFInstance0",
+                    "PortFormat": "YUV420_NV12"
+                },
+                "DstPort": {
+                    "PortId": 0,
+                    "NodeInstance": "virtualInstance0",
+                    "PortFormat": "YUV420_NV12"
+                }
+            },
+            {
+                "SrcPort": {
+                    "PortId": 0,
+                    "NodeInstance": "virtualInstance0",
+                    "PortFormat": "YUV420_NV12"
+                },
+                "DstPort": {
+                    "PortId": 0,
+                    "NodeInstance": "HISV2Instance0",
+                    "PortFormat": "YUV420_NV12"
+                }
+            },
+            {
+                "SrcPort": {
+                    "PortId": 0,
+                    "NodeInstance": "HISV2Instance0",
+                    "PortFormat": "YUV420_NV12"
+                },
+                "DstPort": {
+                    "PortId": 0,
+                    "NodeInstance": "WPEWARPPQInstance0",
+                    "PortFormat": "YUV420_NV12"
+                }
+            },
+            {
+                "SrcPort": {
+                    "PortId": 1,
+                    "NodeInstance": "virtualInstance0",
+                    "PortFormat": "YUV420_NV12"
+                },
+                "DstPort": {
+                    "PortId": 1,
+                    "NodeInstance": "HISV3Instance0",
+                    "PortFormat": "YUV420_NV12"
+                }
+            },
+            {
+                "SrcPort": {
+                    "PortId": 1,
+                    "NodeInstance": "HISV3Instance0",
+                    "PortFormat": "YUV420_NV12"
+                },
+                "DstPort": {
+                    "PortId": 1,
+                    "NodeInstance": "WPEWARPPQInstance1",
+                    "PortFormat": "YUV420_NV12"
+                }
+            },
+            {
+                "SrcPort": {
+                    "PortId": 0,
+                    "NodeInstance": "WPEWARPPQInstance0",
+                    "PortFormat": "YUV420_NV12"
+                },
+                "DstPort": {
+                    "PortId": 0,
+                    "NodeInstance": "virtualSinkbuffer"
+                }
+            },
+            {
+                "SrcPort": {
+                    "PortId": 0,
+                    "NodeInstance": "virtualSinkbuffer"
+                },
+                "DstPort": {
+                    "PortId": 0,
+                    "NodeInstance": "AsdAsyncInstance0",
+                    "PortFormat": "YUV420_NV12"
+                }
+            },
+            {
+                "SrcPort": {
+                    "PortId": 1,
+                    "NodeInstance": "WPEWARPPQInstance1",
+                    "PortFormat": "YUV420_NV12"
+                },
+                "DstPort": {
+                    "PortId": 1,
+                    "NodeInstance": "SinkBuffer1"
+                }
+            },
+            {
+                "SrcPort": {
+                    "PortId": 2,
+                    "NodeInstance": "WPEWARPPQInstance0"
+                },
+                "DstPort": {
+                    "PortId": 2,
+                    "NodeInstance": "JpegInstance"
+                }
+            },
+            {
+                "SrcPort": {
+                    "PortId": 2,
+                    "NodeInstance": "JpegInstance",
+                    "PortFormat": "BLOB"
+                },
+                "DstPort": {
+                    "PortId": 2,
+                    "NodeInstance": "SinkBuffer2"
+                }
+            }
+        ]
+    }
+}

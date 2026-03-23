@@ -1,0 +1,106 @@
+{
+    "HOOK_GROUP": [
+        {
+            "group_id"  : 1,
+            "group_name": "EepromProbeError",
+            "case"      : [1]
+        },
+        {
+            "group_id"  : 2,
+            "group_name": "SensorProbeError",
+            "case"      : [2]
+        },
+        {
+            "group_id"  : 3,
+            "group_name": "AFDisable",
+            "case"      : [3]
+        },
+        {
+            "group_id"  : 4,
+            "group_name": "OISDisable",
+            "case"      : [4]
+        },
+        {
+            "group_id"  : 5,
+            "group_name": "SensorPowerOff",
+            "case"      : [5]
+        }
+    ],
+
+    "HOOK_CASE" : [
+        {
+            "case_id"   : 1,
+            "case_name" : "EepromProbeError",
+            "hook_function" : ["readDataFromEepromHook"]
+        },
+        {
+            "case_id"   : 2,
+            "case_name" : "SensorProbeError",
+            "hook_function" : ["searchSensorHook"]
+        },
+        {
+            "case_id"   : 3,
+            "case_name" : "AFDisable",
+            "hook_function" : ["SetFocusPositionHook"]
+        },
+        {
+            "case_id"   : 4,
+            "case_name" : "OISDisable",
+            "hook_function" : ["OisStartHook"]
+        },
+        {
+            "case_id"   : 5,
+            "case_name" : "SensorPowerOff",
+            "hook_function" : ["SensorPowerHook"]
+        }
+    ],
+
+    "HOOK_FUNCTION":
+    [
+        {
+            "hook_name": "readDataFromEepromHook",
+            "source_lib_name": "/vendor/lib64/mt6878/libfeatureiodrv_mem.so",
+            "target_lib_name": "/vendor/lib64/com.xiaomi.immunesystem.hook.mtkhal.so",
+            "source_function_symbol": "_ZN5NSCam12CamCalHelper18readDataFromEepromEjjjjPh",
+            "target_function_symbol": "_Z22readDataFromEepromHookPvjjjjPh",
+            "function_type": 2,
+            "hook_type" : 2
+        },
+        {
+            "hook_name": "searchSensorHook",
+            "source_lib_name": "/vendor/lib64/mt6878/libcam.halsensor.so",
+            "target_lib_name": "/vendor/lib64/com.xiaomi.immunesystem.hook.mtkhal.so",
+            "source_function_symbol": "_ZN5NSCam11NSHalSensor13HalSensorList13searchSensorsEv",
+            "target_function_symbol": "_Z16searchSensorHookPv",
+            "function_type": 2,
+            "hook_type" : 2
+        },
+        {
+            "hook_name": "SetFocusPositionHook",
+            "source_lib_name": "/vendor/lib64/mt6878/libcam.hal3a.lensdrv.so",
+            "target_lib_name": "/vendor/lib64/com.xiaomi.immunesystem.hook.mtkhal.so",
+            "source_function_symbol": "_ZN6VCMDrv16SetFocusPositionEi",
+            "target_function_symbol": "_Z20SetFocusPositionHookPvi",
+            "function_type": 2,
+            "hook_type" : 2
+        },
+        {
+            "hook_name": "OisStartHook",
+            "source_lib_name": "/vendor/lib64/mt6878/libcam.peripheralcontroller.so",
+            "target_lib_name": "/vendor/lib64/com.xiaomi.immunesystem.hook.mtkhal.so",
+            "source_function_symbol": "_ZN3mtk5hal3a20PeripheralController5StartEv",
+            "target_function_symbol": "_Z12OisStartHookPv",
+            "function_type": 2,
+            "hook_type" : 2
+        },
+        {
+            "hook_name": "SensorPowerHook",
+            "source_lib_name": "/vendor/lib64/mt6878/libcam.halsensor.so",
+            "target_lib_name": "/vendor/lib64/com.xiaomi.immunesystem.hook.mtkhal.so",
+            "source_function_symbol": "_Z26sensor_ctrl_s_sensor_powerii",
+            "target_function_symbol": "_Z15SensorPowerHookii",
+            "function_type": 2,
+            "hook_type" : 2
+        }
+    ]
+}

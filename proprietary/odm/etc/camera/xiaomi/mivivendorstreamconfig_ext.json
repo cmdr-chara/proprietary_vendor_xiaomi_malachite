@@ -1,0 +1,1992 @@
+{
+    // refer to this doc for more details: https://xiaomi.f.mioffice.cn/sheets/shtk43Bhy0laP0Ouu25rkBb0FOe?sheet=32cca1
+    "ModeList": {
+        "Mode": [
+            {
+                // CameraUser::MIUI
+                "CameraUser": 0,
+                // 0x9005, StreamConfigModeAlgoNormal
+                "VendorOpMode": 36869,
+                // 0x8001, MiaStreamConfigModeSAT
+                "MialgoOpMode": 32769,
+                "RoleIds": [
+                    0
+                ],
+                // RearSat
+                "Signature": "RearSat",
+                "BufferLimitCnt": 12,
+                "minZSLQLength": 9,
+                "VendorSnapshotBufferQueueSize": 42,
+                "FlushWaitTimeMs": [
+                    4000,
+                    4000
+                ],
+                // 0001 1001 0101, 0x195 mihalMfnr/burst/hdr/rawhdr/sn
+                "FeatureMask" : 437,
+                "StreamConfig": [
+                    // bayer14_拍照	0	0	8705	131123	146931712
+                    {
+                        "ratio": 0.0,
+                        "isPhysicalStream": false,
+                        "isZSL": true,
+                        "format": 8707,
+                        "usage": 131123,
+                        "dataSpace": 146931712
+                    },
+                    // raw16_拍照	0	0	32	131123	146931712
+                    {
+                        "ratio": 0.0,
+                        "isPhysicalStream": false,
+                        "isZSL": false,
+                        "format": 32,
+                        "usage": 131123,
+                        "dataSpace": 146931712
+                    },
+                    // R1buffer
+                    {
+                        "ratio": 0.0,
+                        "isPhysicalStream": false,
+                        "isZSL": true,
+                        "format": 8217,
+                        "usage": 0,
+                        "stream_prop": 13,
+                        "dataSpace": 0
+                    },
+                    // NV12buffer	0	0	4096	0	0
+                    {
+                        "ratio": 0.0,
+                        "isPhysicalStream": false,
+                        "format": 4096,
+                        "usage": 0,
+                        "stream_prop": 17,
+                        "dataSpace": 0
+                    },
+                    // F1buffer	0	0	8222	0	0
+                    {
+                        "ratio": 0.0,
+                        "isPhysicalStream": false,
+                        "format": 8222,
+                        "usage": 0,
+                        "stream_prop": 17,
+                        "dataSpace": 0
+                    },
+                    // MEbuffer	0	0	538982489	0	0
+                    {
+                        "ratio": 0.0,
+                        "isPhysicalStream": false,
+                        "format": 538982489,
+                        "usage": 0,
+                        "stream_prop": 17,
+                        "dataSpace": 0
+                    }
+                ]
+            },
+            {
+                // CameraUser::MIUI
+                "CameraUser": 0,
+                // 0x9005, StreamConfigModeAlgoNormal
+                "VendorOpMode": 36869,
+                // 0x8001, MiaStreamConfigModeSAT
+                "MialgoOpMode": 32769,
+                "RoleIds": [
+                    21,
+                    22
+                ],
+                // RearSat
+                "Signature": "RearSat",
+                "BufferLimitCnt": 12,
+                "minZSLQLength": 9,
+                "VendorSnapshotBufferQueueSize": 42,
+                "FlushWaitTimeMs": [
+                    4000,
+                    4000
+                ],
+                // 0001 1001 0101, 0x195 mihalMfnr/burst/hdr/rawhdr/sn
+                "FeatureMask" : 437,
+                "StreamConfig": [
+                    // bayer10_拍照	0	0	8705	131123	146931712
+                    {
+                        "ratio": 0.0,
+                        "isPhysicalStream": false,
+                        "isZSL": true,
+                        "format": 8705,
+                        "usage": 131123,
+                        "dataSpace": 146931712
+                    },
+                    // raw16_拍照	0	0	32	131123	146931712
+                    {
+                        "ratio": 0.0,
+                        "isPhysicalStream": false,
+                        "isZSL": false,
+                        "format": 32,
+                        "usage": 131123,
+                        "dataSpace": 146931712
+                    },
+                    // R1buffer
+                    {
+                        "ratio": 0.0,
+                        "isPhysicalStream": false,
+                        "isZSL": true,
+                        "format": 8217,
+                        "usage": 0,
+                        "stream_prop": 13,
+                        "dataSpace": 0
+                    },
+                    // NV12buffer	0	0	4096	0	0
+                    {
+                        "ratio": 0.0,
+                        "isPhysicalStream": false,
+                        "format": 4096,
+                        "usage": 0,
+                        "stream_prop": 17,
+                        "dataSpace": 0
+                    },
+                    // F1buffer	0	0	8222	0	0
+                    {
+                        "ratio": 0.0,
+                        "isPhysicalStream": false,
+                        "format": 8222,
+                        "usage": 0,
+                        "stream_prop": 17,
+                        "dataSpace": 0
+                    },
+                    // MEbuffer	0	0	538982489	0	0
+                    {
+                        "ratio": 0.0,
+                        "isPhysicalStream": false,
+                        "format": 538982489,
+                        "usage": 0,
+                        "stream_prop": 17,
+                        "dataSpace": 0
+                    }
+                ]
+            },
+            {
+                // CameraUser::MIUI
+                "CameraUser": 0,
+                // 0x9008, StreamConfigModeAlgoManual
+                "VendorOpMode": 36872,
+                // 0x8003, MiaStreamConfigModeMiuiManual
+                "MialgoOpMode": 32771,
+                "RoleIds": [
+                    0
+                ],
+                "Signature": "Professional",
+                "BufferLimitCnt": 8,
+                "minZSLQLength": 9,
+                "VendorSnapshotBufferQueueSize": 30,
+                "FlushWaitTimeMs": [
+                    700,
+                    4000
+                ],
+                // 001, 0x1, mihalMfnr
+                "FeatureMask" : 1,
+                "StreamConfig": [
+                    // wide_bayer14_拍照	0	0	8705	131123	146931712
+                    {
+                        "ratio": 0.0,
+                        "isPhysicalStream": false,
+                        "isZSL": true,
+                        "format": 8707,
+                        "usage": 131123,
+                        "dataSpace": 146931712
+                    },
+                    // wide_R1buffer	0	0	8217	0	0
+                    {
+                        "ratio": 0.0,
+                        "isPhysicalStream": false,
+                        "isZSL": true,
+                        "format": 8217,
+                        "usage": 0,
+                        "stream_prop": 13,
+                        "dataSpace": 0
+                    },
+                    // wide_NV12_预览
+                    {
+                        "ratio": 0.0,
+                        "isPhysicalStream": false,
+                        "format": 4096,
+                        "usage": 0,
+                        "dataSpace": 0
+                    },
+                    // wide_F1_预览
+                    {
+                        "ratio": 0.0,
+                        "isPhysicalStream": false,
+                        "format": 8222,
+                        "usage": 0,
+                        "dataSpace": 0
+                    },
+                    // wide_ME_预览
+                    {
+                        "ratio": 0.0,
+                        "isPhysicalStream": false,
+                        "format": 538982489,
+                        "usage": 0,
+                        "dataSpace": 0
+                    }
+                ]
+            },
+            {
+                // CameraUser::MIUI
+                "CameraUser": 0,
+                // 0x9008, StreamConfigModeAlgoManual
+                "VendorOpMode": 36872,
+                // 0x8003, MiaStreamConfigModeMiuiManual
+                "MialgoOpMode": 32771,
+                "RoleIds": [
+                    21
+                ],
+                "Signature": "Professional",
+                "BufferLimitCnt": 8,
+                "minZSLQLength": 9,
+                "VendorSnapshotBufferQueueSize": 30,
+                "FlushWaitTimeMs": [
+                    700,
+                    4000
+                ],
+                // 001, 0x1, mihalMfnr
+                "FeatureMask" : 1,
+                "StreamConfig": [
+                    // wide_bayer10_拍照	0	0	8705	131123	146931712
+                    {
+                        "ratio": 0.0,
+                        "isPhysicalStream": false,
+                        "isZSL": true,
+                        "format": 8705,
+                        "usage": 131123,
+                        "dataSpace": 146931712
+                    },
+                    // wide_R1buffer	0	0	8217	0	0
+                    {
+                        "ratio": 0.0,
+                        "isPhysicalStream": false,
+                        "isZSL": true,
+                        "format": 8217,
+                        "usage": 0,
+                        "stream_prop": 13,
+                        "dataSpace": 0
+                    },
+                    // wide_NV12_预览
+                    {
+                        "ratio": 0.0,
+                        "isPhysicalStream": false,
+                        "format": 4096,
+                        "usage": 0,
+                        "dataSpace": 0
+                    },
+                    // wide_F1_预览
+                    {
+                        "ratio": 0.0,
+                        "isPhysicalStream": false,
+                        "format": 8222,
+                        "usage": 0,
+                        "dataSpace": 0
+                    },
+                    // wide_ME_预览
+                    {
+                        "ratio": 0.0,
+                        "isPhysicalStream": false,
+                        "format": 538982489,
+                        "usage": 0,
+                        "dataSpace": 0
+                    }
+                ]
+            },
+            {
+                // CameraUser::MIUI
+                "CameraUser": 0,
+                // 0x9000, StreamConfigModeAlgoDual
+                "VendorOpMode": 36864,
+                // 0x8002, StreamConfigModeBokeh
+                "MialgoOpMode": 32770,
+                "RoleIds": [
+                    61,
+                    63
+                ],
+                "Signature": "DualBokeh",
+                "BufferLimitCnt": 8,
+                "minZSLQLength": 6,
+                // Bokeh 12/1, HDRBokeh 12/3, SNBokeh 12/6
+                "VendorSnapshotBufferQueueSize": 30,
+                "FlushWaitTimeMs": [
+                    4000,
+                    4000
+                ],
+                // 0001 0001 0001, 0x111, mihalMfnr/hdrBokeh/snBokeh
+                "FeatureMask" : 273,
+                "StreamConfig": [
+                    // nv12 stream of master
+                    {
+                        "bokehSig": 0,
+                        "ratio": 0.0,
+                        "isPhysicalStream": true,
+                        "format": 4096,
+                        "usage": 131123,
+                        "stream_prop": 17,
+                        "dataSpace": 146931712
+                    },
+                    // f1 stream of master
+                    {
+                        "bokehSig": 0,
+                        "ratio": 0.0,
+                        "isPhysicalStream": true,
+                        "format": 8222,
+                        "usage": 131123,
+                        "stream_prop": 17,
+                        "dataSpace": 146931712
+                    },
+                    // me stream of master
+                    {
+                        "bokehSig": 0,
+                        "ratio": 0.0,
+                        "isPhysicalStream": true,
+                        "format": 538982489,
+                        "usage": 131123,
+                        "stream_prop": 17,
+                        "dataSpace": 146931712
+                    },
+                    // nv12 stream of slave
+                    {
+                        "bokehSig": 2,
+                        "ratio": 0.0,
+                        "isPhysicalStream": true,
+                        "format": 4096,
+                        "usage": 131123,
+                        "stream_prop": 17,
+                        "dataSpace": 146931712
+                    },
+                    // f1 stream of slave
+                    {
+                        "bokehSig": 2,
+                        "ratio": 0.0,
+                        "isPhysicalStream": true,
+                        "format": 8222,
+                        "usage": 131123,
+                        "stream_prop": 17,
+                        "dataSpace": 146931712
+                    },
+                    // me stream of slave
+                    {
+                        "bokehSig": 2,
+                        "ratio": 0.0,
+                        "isPhysicalStream": true,
+                        "format": 538982489,
+                        "usage": 131123,
+                        "stream_prop": 17,
+                        "dataSpace": 146931712
+                    },
+                    // bayer10 stream of master
+                    {
+                        // BokehCamSig::masterRaw
+                        "bokehSig": 1,
+                        "ratio": 0.0,
+                        "isPhysicalStream": true,
+                        "isZSL": true,
+                        "format": 8705,
+                        "usage": 3,
+                        "dataSpace": 146931712
+                    },
+                    // bayer10 stream of slave
+                    {
+                        // BokehCamSig::slaveRaw
+                        "bokehSig": 3,
+                        "ratio": 0.0,
+                        "isPhysicalStream": true,
+                        "isZSL": true,
+                        "format": 8705,
+                        "usage": 131123,
+                        "dataSpace": 146931712
+                    },
+                    // R1buffer stream of master
+                    {
+                        "bokehSig": 0,
+                        "ratio": 0.0,
+                        "isPhysicalStream": true,
+                        "isZSL": true,
+                        "format": 8217,
+                        "usage": 131123,
+                        "stream_prop": 13,
+                        "dataSpace": 146931712
+                    },
+                    // raw16 stream of master for sebokeh
+                    {
+                        // BokehCamSig::masterRaw
+                        "bokehSig": 1,
+                        "ratio": 0.0,
+                        "isPhysicalStream": true,
+                        "format": 32,
+                        "usage": 3,
+                        "dataSpace": 146931712
+                    },
+                    // raw16 stream of slave for sebokeh
+                    {
+                        // BokehCamSig::slaveRaw
+                        "bokehSig": 3,
+                        "ratio": 0.0,
+                        "isPhysicalStream": true,
+                        "format": 32,
+                        "usage": 131123,
+                        "dataSpace": 146931712
+                    }
+                ]
+            },
+            {
+                // CameraUser::MIUI
+                "CameraUser": 0,
+                // 0x9005, StreamConfigModeAlgoNormal
+                "VendorOpMode": 36869,
+                // 0x8005, MiaStreamConfigModeMiuiZslFront
+                "MialgoOpMode": 32773,
+                "RoleIds": [
+                    1
+                ],
+                "Signature": "SingleFront",
+                "BufferLimitCnt": 8,
+                "minZSLQLength": 9,
+                "VendorSnapshotBufferQueueSize": 30,
+                "FlushWaitTimeMs": [
+                    4000,
+                    4000
+                ],
+                // 0001 0001 0001, 0x111, mihalMfnr/hdr/sn
+                "FeatureMask" : 273,
+                "StreamConfig": [
+                    // cam1_bayer10_拍照
+                    {
+                        "ratio": 0.0,
+                        "isPhysicalStream": false,
+                        "isZSL": true,
+                        "format": 8705,
+                        "usage": 131123,
+                        "dataSpace": 146931712
+                    },
+                    // cam1_raw16_拍照
+                    {
+                        "ratio": 0.0,
+                        "isPhysicalStream": false,
+                        "isZSL": false,
+                        "format": 32,
+                        "usage": 131123,
+                        "dataSpace": 146931712
+                    },
+                    // cam1_R1buffer
+                    {
+                        "ratio": 0.0,
+                        "isPhysicalStream": false,
+                        "isZSL": true,
+                        "format": 8217,
+                        "usage": 0,
+                        "stream_prop": 13,
+                        "dataSpace": 0
+                    },
+                    // cam1_NV12buffer
+                    {
+                        "ratio": 0.0,
+                        "isPhysicalStream": false,
+                        "format": 4096,
+                        "usage": 0,
+                        "dataSpace": 0
+                    },
+                    // cam1_F1buffer
+                    {
+                        "ratio": 0.0,
+                        "isPhysicalStream": false,
+                        "format": 8222,
+                        "usage": 0,
+                        "dataSpace": 0
+                    },
+                    // cam1_MEbuffer
+                    {
+                        "ratio": 0.0,
+                        "isPhysicalStream": false,
+                        "format": 538982489,
+                        "usage": 0,
+                        "dataSpace": 0
+                    }
+                ]
+            },
+            {
+                // CameraUser::MIUI
+                "CameraUser": 0,
+                // 0x9001, StreamConfigModeQCFALite
+                "VendorOpMode": 36865,
+                // 0x8005, MiaStreamConfigModeMiuiZslFront
+                "MialgoOpMode": 32773,
+                "RoleIds": [
+                    1
+                ],
+                "Signature": "SingleFront",
+                "BufferLimitCnt": 8,
+                "minZSLQLength": 9,
+                "VendorSnapshotBufferQueueSize": 30,
+                "FlushWaitTimeMs": [
+                    4000,
+                    4000
+                ],
+                // 0001 0001 0001, 0x111, mihalMfnr/hdr/sn
+                "FeatureMask" : 273,
+                "StreamConfig": [
+                    // cam1_bayer10_拍照
+                    {
+                        "ratio": 0.0,
+                        "isPhysicalStream": false,
+                        "isZSL": true,
+                        "format": 8705,
+                        "usage": 131123,
+                        "dataSpace": 146931712
+                    },
+                    // cam1_raw16_拍照
+                    {
+                        "ratio": 0.0,
+                        "isPhysicalStream": false,
+                        "isZSL": false,
+                        "format": 32,
+                        "usage": 131123,
+                        "dataSpace": 146931712
+                    },
+                    // cam1_R1buffer
+                    {
+                        "ratio": 0.0,
+                        "isPhysicalStream": false,
+                        "isZSL": true,
+                        "format": 8217,
+                        "usage": 0,
+                        "stream_prop": 13,
+                        "dataSpace": 0
+                    },
+                    // cam1_NV12buffer
+                    {
+                        "ratio": 0.0,
+                        "isPhysicalStream": false,
+                        "format": 4096,
+                        "usage": 0,
+                        "dataSpace": 0
+                    },
+                    // cam1_F1buffer
+                    {
+                        "ratio": 0.0,
+                        "isPhysicalStream": false,
+                        "format": 8222,
+                        "usage": 0,
+                        "dataSpace": 0
+                    },
+                    // cam1_MEbuffer
+                    {
+                        "ratio": 0.0,
+                        "isPhysicalStream": false,
+                        "format": 538982489,
+                        "usage": 0,
+                        "dataSpace": 0
+                    }
+                ]
+            },
+            {
+                // CameraUser::MIUI
+                "CameraUser": 0,
+                // 0x9003, StreamConfigModeAlgoSingleRTB
+                "VendorOpMode": 36867,
+                // 0x8002, StreamConfigModeBokeh
+                "MialgoOpMode": 32770,
+                "RoleIds": [
+                    1
+                ],
+                "Signature": "SingleBokeh",
+                "BufferLimitCnt": 8,
+                "minZSLQLength": 9,
+                "VendorSnapshotBufferQueueSize": 30,
+                "FlushWaitTimeMs": [
+                    700,
+                    4000
+                ],
+                // 0001 0001, 0x11, mihalMfnr/hdr
+                "FeatureMask" : 17,
+                "StreamConfig": [
+                    // cam1_yuv_preview
+                    {
+                        "ratio": 0.0,
+                        "isPhysicalStream": false,
+                        "format": 4096,
+                        "usage": 131123,
+                        "dataSpace": 146931712
+                    },
+                    // cam1_f1_preview
+                    {
+                        "ratio": 0.0,
+                        "isPhysicalStream": false,
+                        "format": 8222,
+                        "usage": 131123,
+                        "dataSpace": 146931712
+                    },
+                    // cam1_me_preview
+                    {
+                        "ratio": 0.0,
+                        "isPhysicalStream": false,
+                        "format": 538982489,
+                        "usage": 131123,
+                        "dataSpace": 146931712
+                    },
+                    // cam1_bayer10_拍照
+                    {
+                        "ratio": 0.0,
+                        "isPhysicalStream": false,
+                        "isZSL": true,
+                        "format": 8705,
+                        "usage": 131123,
+                        "dataSpace": 146931712
+                    },
+                    // cam1_raw16_拍照
+                    {
+                        "ratio": 0.0,
+                        "isPhysicalStream": false,
+                        "format": 32,
+                        "usage": 131123,
+                        "dataSpace": 146931712
+                    },
+                    // cam1_R1buffer
+                    {
+                        "ratio": 0.0,
+                        "isPhysicalStream": false,
+                        "isZSL": true,
+                        "format": 8217,
+                        "usage": 0,
+                        "dataSpace": 0,
+                        "stream_prop": 13
+                    }
+                ]
+            },
+            {
+                // CameraUser::MIUI
+                "CameraUser": 0,
+                // 0x9004, StreamConfigModeAlgoQCFAMFNR
+                "VendorOpMode": 36868,
+                // 0x80F3, MiaStreamConfigModeUltraPixelPhotography
+                "MialgoOpMode": 33011,
+                "RoleIds": [
+                    0
+                ],
+                "Signature": "SuperHD",
+                "BufferLimitCnt": 8,
+                "minZSLQLength": 9,
+                "VendorSnapshotBufferQueueSize": 30,
+                "FlushWaitTimeMs": [
+                    4000,
+                    4000
+                ],
+                // 0001 0001, 0x11, mihalMfnr/hdr
+                "FeatureMask" : 17,
+                "StreamConfig": [
+                    // bayer10 stream for binning size
+                    {
+                        "ratio": 0.0,
+                        "isPhysicalStream": false,
+                        "format": 8705,
+                        "isZSL": true,
+                        "usage": 131123,
+                        "dataSpace": 146931712,
+                        "isRemosaic": false
+                    },
+                    // R1buffer
+                    {
+                        "ratio": 0.0,
+                        "isPhysicalStream": false,
+                        "isZSL": true,
+                        "format": 8217,
+                        "usage": 0,
+                        "stream_prop": 13,
+                        "dataSpace": 0
+                    },
+                    // NV12buffer
+                    {
+                        "ratio": 0.0,
+                        "isPhysicalStream": false,
+                        "format": 4096,
+                        "usage": 0,
+                        "dataSpace": 0
+                    },
+                    // F1buffer
+                    {
+                        "ratio": 0.0,
+                        "isPhysicalStream": false,
+                        "format": 8222,
+                        "usage": 0,
+                        "dataSpace": 0
+                    },
+                    // MEbuffer
+                    {
+                        "ratio": 0.0,
+                        "isPhysicalStream": false,
+                        "format": 538982489,
+                        "usage": 0,
+                        "dataSpace": 0
+                    },
+                    // bayer10 stream for remosiac 4cell size
+                    {
+                        "ratio": 0.0,
+                        "isPhysicalStream": false,
+                        "format": 8705,
+                        "usage": 131123,
+                        "dataSpace": 146931712,
+                        "isRemosaic": true,
+                        "stream_prop": 20
+                    },
+                    // bayer10 stream for remosiac sw e2e size
+                    {
+                        "ratio": 0.0,
+                        "isPhysicalStream": false,
+                        "format": 8705,
+                        "usage": 131123,
+                        "dataSpace": 146931712,
+                        "isRemosaic": true
+                    }
+                ]
+            },
+            {
+                // CameraUser::MIUI
+                "CameraUser": 0,
+                // 0x9007, StreamConfigModeAlgoManualSuperHD
+                "VendorOpMode": 36871,
+                // 0x80F3, MiaStreamConfigModeUltraPixelPhotography
+                "MialgoOpMode": 33011,
+                "RoleIds": [
+                    0
+                ],
+                "Signature": "ManualSuperHD",
+                "BufferLimitCnt": 8,
+                "minZSLQLength": 9,
+                "VendorSnapshotBufferQueueSize": 30,
+                "FlushWaitTimeMs": [
+                    700,
+                    4000
+                ],
+                // 0001, 0x1, mihalMfnr
+                "FeatureMask" : 1,
+                "StreamConfig": [
+                    // bayer14 stream for binning size
+                    {
+                        "ratio": 0.0,
+                        "isPhysicalStream": false,
+                        "format": 8707,
+                        "isZSL": true,
+                        "usage": 131123,
+                        "dataSpace": 146931712,
+                        "isRemosaic": false
+                    },
+                    // R1buffer
+                    {
+                        "ratio": 0.0,
+                        "isPhysicalStream": false,
+                        "isZSL": true,
+                        "format": 8217,
+                        "usage": 0,
+                        "stream_prop": 13,
+                        "dataSpace": 0
+                    },
+                    // NV12buffer
+                    {
+                        "ratio": 0.0,
+                        "isPhysicalStream": false,
+                        "format": 4096,
+                        "usage": 0,
+                        "dataSpace": 0
+                    },
+                    // F1buffer
+                    {
+                        "ratio": 0.0,
+                        "isPhysicalStream": false,
+                        "format": 8222,
+                        "usage": 0,
+                        "dataSpace": 0
+                    },
+                    // MEbuffer
+                    {
+                        "ratio": 0.0,
+                        "isPhysicalStream": false,
+                        "format": 538982489,
+                        "usage": 0,
+                        "dataSpace": 0
+                    },
+                    // bayer10 stream for remosiac 4cell size
+                    {
+                        "ratio": 0.0,
+                        "isPhysicalStream": false,
+                        "format": 8705,
+                        "usage": 131123,
+                        "dataSpace": 146931712,
+                        "isRemosaic": true,
+                        "stream_prop": 20
+                    },
+                    // bayer10 stream for remosiac sw e2e size
+                    {
+                        "ratio": 0.0,
+                        "isPhysicalStream": false,
+                        "format": 8705,
+                        "usage": 131123,
+                        "dataSpace": 146931712,
+                        "isRemosaic": true
+                    }
+                ]
+            },
+            {
+                // CameraUser::MIUI
+                "CameraUser": 0,
+                // 0x800A, StreamConfigModeMiuiSuperNight
+                "VendorOpMode": 32778,
+                // 0x800A, MiaStreamConfigModeMiuiSuperNight
+                "MialgoOpMode": 32778,
+                "RoleIds": [
+                    0,
+                    21
+                ],
+                "Signature": "RearSuperNight",
+                "BufferLimitCnt": 8,
+                "VendorSnapshotBufferQueueSize": 28,
+                "FlushWaitTimeMs": [
+                    4000,
+                    4000
+                ],
+                // 0001 0001 0000, 0x110, hdr/sn
+                "FeatureMask" : 272,
+                "StreamConfig": [
+                    // yuv stream for preview
+                    {
+                        "ratio": 0.0,
+                        "isPhysicalStream": false,
+                        "format": 4096,
+                        "usage": 131123,
+                        "dataSpace": 146931712
+                    },
+                    // f1 stream for preview
+                    {
+                        "ratio": 0.0,
+                        "isPhysicalStream": false,
+                        "format": 8222,
+                        "usage": 131123,
+                        "dataSpace": 146931712
+                    },
+                    // me stream for preview
+                    {
+                        "ratio": 0.0,
+                        "isPhysicalStream": false,
+                        "format": 538982489,
+                        "usage": 131123,
+                        "dataSpace": 146931712
+                    },
+                    // raw16 stream for sn
+                    {
+                        "ratio": 0.0,
+                        "isPhysicalStream": false,
+                        "format": 32,
+                        "usage": 3,
+                        "dataSpace": 146931712
+                    }
+                ]
+            },
+            {
+                // CameraUser::MIUI
+                "CameraUser": 0,
+                // 0x800A, StreamConfigModeMiuiSuperNight
+                "VendorOpMode": 32778,
+                // 0x800A, MiaStreamConfigModeMiuiSuperNight
+                "MialgoOpMode": 32778,
+                "RoleIds": [
+                    1
+                ],
+                "Signature": "FrontSuperNight",
+                "BufferLimitCnt": 8,
+                "minZSLQLength": 9,
+                "VendorSnapshotBufferQueueSize": 30,
+                "FlushWaitTimeMs": [
+                    700,
+                    4000
+                ],
+                // 0001 0000 0001, 0x101, mihalMfnr/yuvSn
+                "FeatureMask" : 257,
+                "StreamConfig": [
+                    // yuv stream for preview
+                    {
+                        "ratio": 0.0,
+                        "isPhysicalStream": false,
+                        "format": 4096,
+                        "usage": 131123,
+                        "dataSpace": 146931712
+                    },
+                    // f1 stream for preview
+                    {
+                        "ratio": 0.0,
+                        "isPhysicalStream": false,
+                        "format": 8222,
+                        "usage": 131123,
+                        "dataSpace": 146931712
+                    },
+                    // me stream for preview
+                    {
+                        "ratio": 0.0,
+                        "isPhysicalStream": false,
+                        "format": 538982489,
+                        "usage": 131123,
+                        "dataSpace": 146931712
+                    },
+                    // raw16 stream for sn
+                    {
+                        "ratio": 0.0,
+                        "isPhysicalStream": false,
+                        "format": 32,
+                        "usage": 3,
+                        "dataSpace": 146931712
+                    },
+                    // bayer10 stream for mihalMfnr
+                    {
+                        "ratio": 0.0,
+                        "isPhysicalStream": false,
+                        "isZSL": true,
+                        "format": 8705,
+                        "usage": 131123,
+                        "dataSpace": 146931712
+                    },
+                    // R1buffer
+                    {
+                        "ratio": 0.0,
+                        "isPhysicalStream": false,
+                        "isZSL": true,
+                        "format": 8217,
+                        "usage": 0,
+                        "stream_prop": 13,
+                        "dataSpace": 0
+                    }
+                ]
+            },
+            {
+                // CameraUser::MIUI
+                "CameraUser": 0,
+                // 0x8004, StreamConfigModeMiuiVideo
+                "VendorOpMode": 32772,
+                // 0x8004, MiaStreamConfigModeMiuiVideo
+                "MialgoOpMode": 32772,
+                "RoleIds": [
+                    0,
+                    21
+                ],
+                "Signature": "RearSimpleVideo",
+                "BufferLimitCnt": 12,
+                "VendorSnapshotBufferQueueSize": 30,
+                "FlushWaitTimeMs": [
+                    4000,
+                    4000
+                ],
+                "StreamConfig": [
+                    // wide_NV12buffer	0	0	1	4096	0	0
+                    {
+                        "roleId": 0,
+                        "ratio": 0.0,
+                        "isPhysicalStream": false,
+                        "format": 4096,
+                        "usage": 0,
+                        "dataSpace": 0
+                    },
+                    // wide_F1buffer	0	0	1	8222	0	0
+                    {
+                        "roleId": 0,
+                        "ratio": 0.0,
+                        "isPhysicalStream": false,
+                        "format": 8222,
+                        "usage": 0,
+                        "dataSpace": 0
+                    },
+                    // wide_MEbuffer	0	0	1	538982489	0	0
+                    {
+                        "roleId": 0,
+                        "ratio": 0.0,
+                        "isPhysicalStream": false,
+                        "format": 538982489,
+                        "usage": 0,
+                        "dataSpace": 0
+                    }
+                ]
+            },
+            {
+                // CameraUser::MIUI
+                "CameraUser": 0,
+                // 0x8004, StreamConfigModeMiuiVideo
+                "VendorOpMode": 32772,
+                // 0x8004, MiaStreamConfigModeMiuiVideo
+                "MialgoOpMode": 32772,
+                "RoleIds": [
+                    0
+                ],
+                // 4k nosat ufbc
+                "VideoSenceType": 7,
+                "Signature": "RearSimpleVideo",
+                "BufferLimitCnt": 12,
+                "VendorSnapshotBufferQueueSize": 30,
+                "FlushWaitTimeMs": [
+                    4000,
+                    4000
+                ],
+                "StreamConfig": [
+                    // wide_NV12buffer	0	0	1	4096	0	0
+                    {
+                        "roleId": 0,
+                        "ratio": 0.0,
+                        "isPhysicalStream": false,
+                        "format": 9476,
+                        "usage": 0,
+                        "dataSpace": 0
+                    },
+                    // wide_F1buffer	0	0	1	8222	0	0
+                    {
+                        "roleId": 0,
+                        "ratio": 0.0,
+                        "isPhysicalStream": false,
+                        "format": 8222,
+                        "usage": 0,
+                        "dataSpace": 0
+                    },
+                    // wide_MEbuffer	0	0	1	538982489	0	0
+                    {
+                        "roleId": 0,
+                        "ratio": 0.0,
+                        "isPhysicalStream": false,
+                        "format": 538982489,
+                        "usage": 0,
+                        "dataSpace": 0
+                    }
+                ]
+            },
+            {
+                // CameraUser::MIUI
+                "CameraUser": 0,
+                // 0x8004, StreamConfigModeMiuiVideo
+                "VendorOpMode": 32772,
+                // 0x8004, MiaStreamConfigModeMiuiVideo
+                "MialgoOpMode": 32772,
+                "RoleIds": [
+                    0
+                ],
+                // 4k nosat ufbc
+                "VideoSenceType": 12,
+                "Signature": "RearSimpleVideo",
+                "BufferLimitCnt": 12,
+                "VendorSnapshotBufferQueueSize": 30,
+                "FlushWaitTimeMs": [
+                    4000,
+                    4000
+                ],
+                "StreamConfig": [
+                    // wide_NV12buffer  0   0   1   4096    0   0
+                    {
+                        "roleId": 0,
+                        "ratio": 0.0,
+                        "isPhysicalStream": false,
+                        "format": 9476,
+                        "usage": 0,
+                        "dataSpace": 0
+                    },
+                    // wide_F1buffer    0   0   1   8222    0   0
+                    {
+                        "roleId": 0,
+                        "ratio": 0.0,
+                        "isPhysicalStream": false,
+                        "format": 8222,
+                        "usage": 0,
+                        "dataSpace": 0
+                    },
+                    // wide_MEbuffer    0   0   1   538982489   0   0
+                    {
+                        "roleId": 0,
+                        "ratio": 0.0,
+                        "isPhysicalStream": false,
+                        "format": 538982489,
+                        "usage": 0,
+                        "dataSpace": 0
+                    }
+                ]
+            },
+            {
+                // CameraUser::MIUI
+                "CameraUser": 0,
+                // 0x8004, StreamConfigModeMiuiVideo
+                "VendorOpMode": 32772,
+                // 0x8004, MiaStreamConfigModeMiuiVideo
+                "MialgoOpMode": 32772,
+                "RoleIds": [
+                    0
+                ],
+                // 4k MODE_FAST_MOTION no ufbc
+                "VideoSenceType": 13,
+                "Signature": "RearSimpleVideo",
+                "BufferLimitCnt": 12,
+                "VendorSnapshotBufferQueueSize": 30,
+                "FlushWaitTimeMs": [
+                    4000,
+                    4000
+                ],
+                "StreamConfig": [
+                    // wide_NV12buffer  0   0   1   4096    0   0
+                    {
+                        "roleId": 0,
+                        "ratio": 0.0,
+                        "isPhysicalStream": false,
+                        "format": 4096,
+                        "usage": 0,
+                        "dataSpace": 0
+                    },
+                    // wide_F1buffer    0   0   1   8222    0   0
+                    {
+                        "roleId": 0,
+                        "ratio": 0.0,
+                        "isPhysicalStream": false,
+                        "format": 8222,
+                        "usage": 0,
+                        "dataSpace": 0
+                    },
+                    // wide_MEbuffer    0   0   1   538982489   0   0
+                    {
+                        "roleId": 0,
+                        "ratio": 0.0,
+                        "isPhysicalStream": false,
+                        "format": 538982489,
+                        "usage": 0,
+                        "dataSpace": 0
+                    }
+                ]
+            },
+            {
+                // CameraUser::MIUI
+                "CameraUser": 0,
+                // 0x8004, StreamConfigModeMiuiVideo
+                "VendorOpMode": 32772,
+                // 0x8004, MiaStreamConfigModeMiuiVideo
+                "MialgoOpMode": 32772,
+                "RoleIds": [
+                    1
+                ],
+                "Signature": "FrontSimpleVideo",
+                "BufferLimitCnt": 12,
+                "VendorSnapshotBufferQueueSize": 30,
+                "FlushWaitTimeMs": [
+                    4000,
+                    4000
+                ],
+                "StreamConfig": [
+                    // wide_NV12buffer	0	0	1	4096	0	0
+                    {
+                        "roleId": 0,
+                        "ratio": 0.0,
+                        "isPhysicalStream": false,
+                        "format": 4096,
+                        "usage": 0,
+                        "dataSpace": 0
+                    },
+                    // wide_F1buffer	0	0	1	8222	0	0
+                    {
+                        "roleId": 0,
+                        "ratio": 0.0,
+                        "isPhysicalStream": false,
+                        "format": 8222,
+                        "usage": 0,
+                        "dataSpace": 0
+                    },
+                    // wide_MEbuffer	0	0	1	538982489	0	0
+                    {
+                        "roleId": 0,
+                        "ratio": 0.0,
+                        "isPhysicalStream": false,
+                        "format": 538982489,
+                        "usage": 0,
+                        "dataSpace": 0
+                    }
+                ]
+            },
+            {
+                // CameraUser::MIUI
+                "CameraUser": 0,
+                // 0x800f, StreamConfigModeMiuiSUPEREISPROVideo
+                "VendorOpMode": 32783,
+                // 0x800f, MiaStreamConfigModeMiuiSUPEREISPROVideo
+                "MialgoOpMode": 32783,
+                "RoleIds": [
+                    0,
+                    1,
+                    21
+                ],
+                "Signature": "SuperEISProVideo",
+                "BufferLimitCnt": 12,
+                "VendorSnapshotBufferQueueSize": 30,
+                "FlushWaitTimeMs": [
+                    4000,
+                    4000
+                ],
+                "StreamConfig": [
+                    // wide_NV12buffer	0	0	1	4096	0	0
+                    {
+                        "roleId": 0,
+                        "ratio": 0.0,
+                        "isPhysicalStream": false,
+                        "format": 4096,
+                        "usage": 0,
+                        "dataSpace": 0
+                    },
+                    // wide_F1buffer	0	0	1	8222	0	0
+                    {
+                        "roleId": 0,
+                        "ratio": 0.0,
+                        "isPhysicalStream": false,
+                        "format": 8222,
+                        "usage": 0,
+                        "dataSpace": 0
+                    },
+                    // wide_MEbuffer	0	0	1	538982489	0	0
+                    {
+                        "roleId": 0,
+                        "ratio": 0.0,
+                        "isPhysicalStream": false,
+                        "format": 538982489,
+                        "usage": 0,
+                        "dataSpace": 0
+                    }
+                ]
+            },
+            {
+                // CameraUser::MIUI
+                "CameraUser": 0,
+                // 0x800d, StreamConfigModeMiuiSUPEREISVideo
+                "VendorOpMode": 32781,
+                // 0x800d, MiaStreamConfigModeMiuiSUPEREISVideo
+                "MialgoOpMode": 32781,
+                "RoleIds": [
+                    0,
+                    1,
+                    21
+                ],
+                "Signature": "SuperEISVideo",
+                "BufferLimitCnt": 12,
+                "VendorSnapshotBufferQueueSize": 30,
+                "FlushWaitTimeMs": [
+                    4000,
+                    4000
+                ],
+                "StreamConfig": [
+                    // wide_NV12buffer	0	0	1	4096	0	0
+                    {
+                        "roleId": 0,
+                        "ratio": 0.0,
+                        "isPhysicalStream": false,
+                        "format": 4096,
+                        "usage": 0,
+                        "dataSpace": 0
+                    },
+                    // wide_F1buffer	0	0	1	8222	0	0
+                    {
+                        "roleId": 0,
+                        "ratio": 0.0,
+                        "isPhysicalStream": false,
+                        "format": 8222,
+                        "usage": 0,
+                        "dataSpace": 0
+                    },
+                    // wide_MEbuffer	0	0	1	538982489	0	0
+                    {
+                        "roleId": 0,
+                        "ratio": 0.0,
+                        "isPhysicalStream": false,
+                        "format": 538982489,
+                        "usage": 0,
+                        "dataSpace": 0
+                    }
+                ]
+            },
+            {
+                // CameraUser::MIUI
+                "CameraUser": 0,
+                // 0x0000, StreamConfigModeNormal
+                "VendorOpMode": 0,
+                // 0x0000, MiaStreamConfigModeNormal
+                "MialgoOpMode": 0,
+                "RoleIds": [
+                    0
+                ],
+                "Signature": "NormalVideo",
+                "BufferLimitCnt": 12,
+                "VendorSnapshotBufferQueueSize": 30,
+                "FlushWaitTimeMs": [
+                    4000,
+                    4000
+                ],
+                "StreamConfig": [
+                    // wide_NV12buffer	0	0	1	4096	0	0
+                    {
+                        "roleId": 0,
+                        "ratio": 0.0,
+                        "isPhysicalStream": false,
+                        "format": 4096,
+                        "usage": 0,
+                        "dataSpace": 0
+                    },
+                    // wide_F1buffer	0	0	1	8222	0	0
+                    {
+                        "roleId": 0,
+                        "ratio": 0.0,
+                        "isPhysicalStream": false,
+                        "format": 8222,
+                        "usage": 0,
+                        "dataSpace": 0
+                    },
+                    // wide_MEbuffer	0	0	1	538982489	0	0
+                    {
+                        "roleId": 0,
+                        "ratio": 0.0,
+                        "isPhysicalStream": false,
+                        "format": 538982489,
+                        "usage": 0,
+                        "dataSpace": 0
+                    }
+                ]
+            },
+            {
+                // CameraUser::MIUI
+                "CameraUser": 0,
+                // 0x0000, StreamConfigModeNormal
+                "VendorOpMode": 0,
+                // 0x0000, MiaStreamConfigModeNormal
+                "MialgoOpMode": 0,
+                "RoleIds": [
+                    0
+                ],
+                "VideoSenceType": 9,
+                "Signature": "LongExposure",
+                "BufferLimitCnt": 12,
+                "VendorSnapshotBufferQueueSize": 30,
+                "FlushWaitTimeMs": [
+                    4000,
+                    4000
+                ],
+                // 010, 0x2, vendorMfnr
+                "FeatureMask" : 2,
+                "StreamConfig": [
+                    // wide_bayer10_拍照
+                    {
+                        "roleId": 0,
+                        "ratio": 0.0,
+                        "isPhysicalStream": false,
+                        "isZSL": true,
+                        "format": 8707,
+                        "usage": 131123,
+                        "dataSpace": 146931712
+                    },
+                    // wide_NV12buffer	0	0	1	4096	0	0
+                    {
+                        "roleId": 0,
+                        "ratio": 0.0,
+                        "isPhysicalStream": false,
+                        "format": 4096,
+                        "usage": 131123,
+                        "dataSpace": 0
+                    },
+                    // wide_F1buffer	0	0	1	8222	0	0
+                    {
+                        "roleId": 0,
+                        "ratio": 0.0,
+                        "isPhysicalStream": false,
+                        "format": 8222,
+                        "usage": 131123,
+                        "dataSpace": 0
+                    },
+                    // wide_MEbuffer	0	0	1	538982489	0	0
+                    {
+                        "roleId": 0,
+                        "ratio": 0.0,
+                        "isPhysicalStream": false,
+                        "format": 538982489,
+                        "usage": 131123,
+                        "dataSpace": 0
+                    }
+                ]
+            },
+            {
+                // CameraUser::MIUI
+                "CameraUser": 0,
+                // 0x8008, StreamConfigModeMiuiPanorama
+                "VendorOpMode": 32776,
+                // 0x8008, MiaStreamConfigModeMiuiPanorama
+                "MialgoOpMode": 32776,
+                "RoleIds": [
+                    0,
+                    1
+                ],
+                "Signature": "PanoramaVideo",
+                "BufferLimitCnt": 12,
+                "VendorSnapshotBufferQueueSize": 30,
+                "FlushWaitTimeMs": [
+                    4000,
+                    4000
+                ],
+                "StreamConfig": [
+                    // wide_NV12buffer	0	0	1	4096	0	0
+                    {
+                        "roleId": 0,
+                        "ratio": 0.0,
+                        "isPhysicalStream": false,
+                        "format": 4096,
+                        "usage": 0,
+                        "dataSpace": 0
+                    },
+                    // wide_F1buffer	0	0	1	8222	0	0
+                    {
+                        "roleId": 0,
+                        "ratio": 0.0,
+                        "isPhysicalStream": false,
+                        "format": 8222,
+                        "usage": 0,
+                        "dataSpace": 0
+                    },
+                    // wide_MEbuffer	0	0	1	538982489	0	0
+                    {
+                        "roleId": 0,
+                        "ratio": 0.0,
+                        "isPhysicalStream": false,
+                        "format": 538982489,
+                        "usage": 0,
+                        "dataSpace": 0
+                    }
+                ]
+            },
+            {
+                // CameraUser::MIUI
+                "CameraUser": 0,
+                // 0x8019, StreamConfigModeMiuiVideoBeautyWithEIS
+                "VendorOpMode": 32793,
+                // 0x8019, MiaStreamConfigModeMiuiVideoBeautyWithEIS
+                "MialgoOpMode": 32793,
+                "RoleIds": [
+                    0,
+                    1,
+                    21
+                ],
+                "Signature": "FrontMagicWandVideo",
+                "BufferLimitCnt": 12,
+                "VendorSnapshotBufferQueueSize": 30,
+                "FlushWaitTimeMs": [
+                    4000,
+                    4000
+                ],
+                "StreamConfig": [
+                    // wide_NV12buffer 0       0       1       4096    0       0
+                    {
+                        "ratio": 0.0,
+                        "isPhysicalStream": false,
+                        "format": 4096,
+                        "usage": 0,
+                        "dataSpace": 0
+                    },
+                    // wide_F1buffer 0       0       1       8222    0       0
+                    {
+                        "ratio": 0.0,
+                        "isPhysicalStream": false,
+                        "format": 8222,
+                        "usage": 0,
+                        "dataSpace": 0
+                    },
+                    // wide_MEbuffer 0       0       1       538982489    0       0
+                    {
+                        "ratio": 0.0,
+                        "isPhysicalStream": false,
+                        "format": 538982489,
+                        "usage": 0,
+                        "dataSpace": 0
+                    }
+                ]
+            },
+            {
+                // CameraUser::MIUI
+                "CameraUser": 0,
+                // 0x800C, StreamConfigModeMiuiVlog
+                "VendorOpMode": 32780,
+                // 0x800C, MiaStreamConfigModeMiuiVlog
+                "MialgoOpMode": 32780,
+                "RoleIds": [
+                    0,
+                    1,
+                    21
+                ],
+                "Signature": "VlogVideo",
+                "BufferLimitCnt": 12,
+                "VendorSnapshotBufferQueueSize": 30,
+                "FlushWaitTimeMs": [
+                    4000,
+                    4000
+                ],
+                "StreamConfig": [
+                    // wide_NV12buffer 0       0       1       4096    0       0
+                    {
+                        "ratio": 0.0,
+                        "isPhysicalStream": false,
+                        "format": 4096,
+                        "usage": 0,
+                        "dataSpace": 0
+                    },
+                    // wide_F1buffer 0       0       1       8222    0       0
+                    {
+                        "ratio": 0.0,
+                        "isPhysicalStream": false,
+                        "format": 8222,
+                        "usage": 0,
+                        "dataSpace": 0
+                    },
+                    // wide_MEbuffer 0       0       1       538982489    0       0
+                    {
+                        "ratio": 0.0,
+                        "isPhysicalStream": false,
+                        "format": 538982489,
+                        "usage": 0,
+                        "dataSpace": 0
+                    }
+                ]
+            },
+            {
+                // CameraUser::MIUI
+                "CameraUser": 0,
+                // 0x8031, StreamConfigModeMiuiVideoNight
+                "VendorOpMode": 32817,
+                // 0x800A, MiaStreamConfigModeMiuiSuperNight
+                "MialgoOpMode": 32778,
+                "RoleIds": [
+                    0
+                ],
+                // VideoNight
+                "Signature": "VideoNight",
+                "BufferLimitCnt": 12,
+                "VendorSnapshotBufferQueueSize": 30,
+                "FlushWaitTimeMs": 4000,
+                "StreamConfig": [
+                    // wide_buffer	0	0	1	eImgFmt_RAW16	0	0
+                    {
+                        "ratio": 0.0,
+                        "isPhysicalStream": false,
+                        "format": 32,
+                        "usage": 131123,
+                        "dataSpace": 146931712,
+                        "stream_prop": 19      // eImgFmt_BAYER14_UNPAK
+                    }
+                ]
+            },
+            {
+                // CameraUser::MIUI
+                "CameraUser": 0,
+                // 0x8032, StreamConfigModeMiuiCineModeWithBokeh
+                "VendorOpMode": 32818,
+                // 0x8032, MiaStreamConfigModeMiuiCineModeWithBokeh
+                "MialgoOpMode": 32818,
+                "RoleIds": [
+                    0
+                ],
+                // VideoNight
+                "Signature": "Cinematic",
+                "BufferLimitCnt": 12,
+                "VendorSnapshotBufferQueueSize": 30,
+                "FlushWaitTimeMs": 4000,
+                "StreamConfig": [
+                    // wide  NV12 buffer
+                    {
+                        "ratio": 0.0,
+                        "isPhysicalStream": false,
+                        "format": 4096,
+                        "usage": 131123,
+                        "dataSpace": 146931712
+                    },
+                    // wide  F1 buffer
+                    {
+                        "ratio": 0.0,
+                        "isPhysicalStream": false,
+                        "format": 8222,
+                        "usage": 131123,
+                        "dataSpace": 146931712
+                    },
+                    // wide  ME buffer
+                    {
+                        "ratio": 0.0,
+                        "isPhysicalStream": false,
+                        "format": 538982489,
+                        "usage": 131123,
+                        "dataSpace": 146931712
+                    }
+                ]
+            },
+            {
+                // CameraUser::MIUI
+                "CameraUser": 0,
+                // 0x8004, StreamConfigModeMiuiVideo
+                "VendorOpMode": 32772,
+                // 0x8004, MiaStreamConfigModeMiuiVideo
+                "MialgoOpMode": 32772,
+                "RoleIds": [
+                    0
+                ],
+                "VideoSenceType": 5,
+                // 10bitLog
+                "Signature": "10bitLog",
+                "BufferLimitCnt": 12,
+                "VendorSnapshotBufferQueueSize": 30,
+                "FlushWaitTimeMs": 4000,
+                "StreamConfig": [
+                    // wide_NV12buffer	0	0	1	4096	0	0
+                    {
+                        "roleId": 0,
+                        "ratio": 0.0,
+                        "isPhysicalStream": false,
+                        "format": 4096,
+                        "usage": 0,
+                        "dataSpace": 0
+                    },
+                    // wide_F1buffer	0	0	1	8222	0	0
+                    {
+                        "roleId": 0,
+                        "ratio": 0.0,
+                        "isPhysicalStream": false,
+                        "format": 8222,
+                        "usage": 0,
+                        "dataSpace": 0
+                    },
+                    // wide_MEbuffer	0	0	1	538982489	0	0
+                    {
+                        "roleId": 0,
+                        "ratio": 0.0,
+                        "isPhysicalStream": false,
+                        "format": 538982489,
+                        "usage": 0,
+                        "dataSpace": 0
+                    }
+                ]
+            },
+            {
+                // CameraUser::MIUI
+                "CameraUser": 0,
+                // 0x8009, StreamConfigModeMiuiVideoBeauty
+                "VendorOpMode": 32777,
+                // 0x8009, MiaStreamConfigModeMiuiVideoBeauty
+                "MialgoOpMode": 32777,
+                "RoleIds": [
+                    0,
+                    1,
+                    21
+                ],
+                "Signature": "VideoBeauty",
+                "BufferLimitCnt": 12,
+                "VendorSnapshotBufferQueueSize": 30,
+                "FlushWaitTimeMs": 4000,
+                "StreamConfig": [
+                    // wide_NV12buffer 0       0       1       4096    0       0
+                    {
+                        "ratio": 0.0,
+                        "isPhysicalStream": false,
+                        "format": 4096,
+                        "usage": 0,
+                        "dataSpace": 0
+                    },
+                    // wide_F1buffer 0       0       1       8222    0       0
+                    {
+                        "ratio": 0.0,
+                        "isPhysicalStream": false,
+                        "format": 8222,
+                        "usage": 0,
+                        "dataSpace": 0
+                    },
+                    // wide_MEbuffer 0       0       1       538982489    0       0
+                    {
+                        "ratio": 0.0,
+                        "isPhysicalStream": false,
+                        "format": 538982489,
+                        "usage": 0,
+                        "dataSpace": 0
+                    }
+                ]
+            },
+            {
+                // CameraUser::SDK
+                "CameraUser": 0,
+                // 0x9011, StreamConfigModeThirdCameraBeauty
+                "VendorOpMode": 36881,
+                // 0x9011, MiaStreamConfigModeThirdCameraBeauty
+                "MialgoOpMode": 36881,
+                "RoleIds": [
+                    1
+                ],
+                "Signature": "ThirdPartyBeauty",
+                "BufferLimitCnt": 12,
+                "VendorSnapshotBufferQueueSize": 30,
+                "FlushWaitTimeMs": [
+                    4000,
+                    4000
+                ],
+                "StreamConfig": [
+                    // wide_NV12buffer	0	0	1	4096	0	0
+                    {
+                        "roleId": 1,
+                        "ratio": 0.0,
+                        "isPhysicalStream": false,
+                        "format": 4096,
+                        "usage": 0,
+                        "dataSpace": 0
+                    },
+                    // wide_F1buffer	0	0	1	8222	0	0
+                    {
+                        "roleId": 1,
+                        "ratio": 0.0,
+                        "isPhysicalStream": false,
+                        "format": 8222,
+                        "usage": 0,
+                        "dataSpace": 0
+                    },
+                    // wide_MEbuffer	0	0	1	538982489	0	0
+                    {
+                        "roleId": 1,
+                        "ratio": 0.0,
+                        "isPhysicalStream": false,
+                        "format": 538982489,
+                        "usage": 0,
+                        "dataSpace": 0
+                    }
+                ]
+           },
+           {
+               // CameraUser::SDK
+               "CameraUser": 0,
+               // 0x9011, StreamConfigModeThirdCameraBeauty
+               "VendorOpMode": 36881,
+               // 0x9011, MiaStreamConfigModeThirdCameraBeauty
+               "MialgoOpMode": 36881,
+               "RoleIds": [
+                    64
+                ],
+               "Signature": "ThirdPartyBeauty",
+               "BufferLimitCnt": 12,
+               "VendorSnapshotBufferQueueSize": 30,
+               "FlushWaitTimeMs": [
+                    4000,
+                    4000
+                ],
+               "StreamConfig": [
+                   // wide_NV12buffer	0	0	1	4096	0	0
+                   {
+                       "roleId": 0,
+                       "ratio": 0.0,
+                       "isPhysicalStream": true,
+                       "format": 4096,
+                       "usage": 0,
+                       "dataSpace": 0
+                   },
+                   // wide_F1buffer	0	0	1	8222	0	0
+                   {
+                       "roleId": 0,
+                       "ratio": 0.0,
+                       "isPhysicalStream": true,
+                       "format": 8222,
+                       "usage": 0,
+                       "dataSpace": 0
+                   },
+                   // wide_MEbuffer	0	0	1	538982489	0	0
+                   {
+                       "roleId": 0,
+                       "ratio": 0.0,
+                       "isPhysicalStream": true,
+                       "format": 538982489,
+                       "usage": 0,
+                       "dataSpace": 0
+                   }
+               ]
+            },
+            {
+                // CameraUser::SDK
+                "CameraUser": 0,
+                // 0x9200, StreamConfigModeThirdCameraVideoEIS
+                "VendorOpMode": 37376,
+                // 0x9200, MiaStreamConfigModeThirdCameraVideoEIS
+                "MialgoOpMode": 37376,
+                "RoleIds": [
+                    0,
+                    1
+                ],
+                "Signature": "ThirdPartyVideo",
+                "BufferLimitCnt": 12,
+                "VendorSnapshotBufferQueueSize": 30,
+                "FlushWaitTimeMs": [
+                    4000,
+                    4000
+                ],
+                "StreamConfig": [
+                    // wide_NV12buffer	0	0	1	4096	0	0
+                    {
+                        "roleId": 0,
+                        "ratio": 0.0,
+                        "isPhysicalStream": false,
+                        "format": 4096,
+                        "usage": 0,
+                        "dataSpace": 0
+                    },
+                    // wide_F1buffer	0	0	1	8222	0	0
+                    {
+                        "roleId": 0,
+                        "ratio": 0.0,
+                        "isPhysicalStream": false,
+                        "format": 8222,
+                        "usage": 0,
+                        "dataSpace": 0
+                    },
+                    // wide_MEbuffer	0	0	1	538982489	0	0
+                    {
+                        "roleId": 0,
+                        "ratio": 0.0,
+                        "isPhysicalStream": false,
+                        "format": 538982489,
+                        "usage": 0,
+                        "dataSpace": 0
+                    }
+                ]
+            },
+            {
+                // CameraUser::SDK
+                "CameraUser": 0,
+                // 0x9200, StreamConfigModeThirdCameraVideoEIS
+                "VendorOpMode": 37376,
+                // 0x9200, MiaStreamConfigModeThirdCameraVideoEIS
+                "MialgoOpMode": 37376,
+                "RoleIds": [
+                    64
+                ],
+                "Signature": "ThirdPartyVideo",
+                "BufferLimitCnt": 12,
+                "VendorSnapshotBufferQueueSize": 30,
+                "FlushWaitTimeMs": [
+                    4000,
+                    4000
+                ],
+                "StreamConfig": [
+                    // wide_NV12buffer	0	0	1	4096	0	0
+                    {
+                        "roleId": 0,
+                        "ratio": 0.0,
+                        "isPhysicalStream": true,
+                        "format": 4096,
+                        "usage": 0,
+                        "dataSpace": 0
+                    },
+                    // wide_F1buffer	0	0	1	8222	0	0
+                    {
+                        "roleId": 0,
+                        "ratio": 0.0,
+                        "isPhysicalStream": true,
+                        "format": 8222,
+                        "usage": 0,
+                        "dataSpace": 0
+                    },
+                    // wide_MEbuffer	0	0	1	538982489	0	0
+                    {
+                        "roleId": 0,
+                        "ratio": 0.0,
+                        "isPhysicalStream": true,
+                        "format": 538982489,
+                        "usage": 0,
+                        "dataSpace": 0
+                    }
+                ]
+            },
+            {
+                // CameraUser::MIUI
+                "CameraUser": 0,
+                // 0xF010, StreamConfigModeQTIFOVC
+                "VendorOpMode": 61456,
+                // 0xF010, MiaStreamConfigModeQTIFOVC
+                "MialgoOpMode": 61456,
+                "RoleIds": [
+                    0,
+                    21,
+                    22
+                ],
+                "Signature": "ProfessWithoutEisVideo",
+                "BufferLimitCnt": 12,
+                "VendorSnapshotBufferQueueSize": 30,
+                "FlushWaitTimeMs": [
+                    4000,
+                    4000
+                ],
+                "StreamConfig": [
+                    // wide_NV12buffer	0	0	1	4096	0	0
+                    {
+                        "roleId": 0,
+                        "ratio": 0.0,
+                        "isPhysicalStream": false,
+                        "format": 4096,
+                        "usage": 0,
+                        "dataSpace": 0
+                    },
+                    // wide_F1buffer	0	0	1	8222	0	0
+                    {
+                        "roleId": 0,
+                        "ratio": 0.0,
+                        "isPhysicalStream": false,
+                        "format": 8222,
+                        "usage": 0,
+                        "dataSpace": 0
+                    },
+                    // wide_MEbuffer	0	0	1	538982489	0	0
+                    {
+                        "roleId": 0,
+                        "ratio": 0.0,
+                        "isPhysicalStream": false,
+                        "format": 538982489,
+                        "usage": 0,
+                        "dataSpace": 0
+                    }
+                ]
+            },
+            {
+                // CameraUser::MIUI
+                "CameraUser": 0,
+                // 0xf010, StreamConfigModeQTIFOVC
+                "VendorOpMode": 61456,
+                // 0xf010, MiaStreamConfigModeQTIFOVC
+                "MialgoOpMode": 61456,
+                "RoleIds": [
+                    0
+                ],
+                "VideoSenceType": 5,
+                "Signature": "ProfessWithoutEisVideoHDR10",
+                "BufferLimitCnt": 12,
+                "VendorSnapshotBufferQueueSize": 30,
+                "FlushWaitTimeMs": [
+                    4000,
+                    4000
+                ],
+                "StreamConfig": [
+                    // wide_NV12buffer	0	0	1	4096	0	0
+                    {
+                        "roleId": 0,
+                        "ratio": 0.0,
+                        "isPhysicalStream": false,
+                        "format": 4096,
+                        "usage": 0,
+                        "dataSpace": 0
+                    },
+                    // wide_F1buffer	0	0	1	8222	0	0
+                    {
+                        "roleId": 0,
+                        "ratio": 0.0,
+                        "isPhysicalStream": false,
+                        "format": 8222,
+                        "usage": 0,
+                        "dataSpace": 0
+                    },
+                    // wide_MEbuffer	0	0	1	538982489	0	0
+                    {
+                        "roleId": 0,
+                        "ratio": 0.0,
+                        "isPhysicalStream": false,
+                        "format": 538982489,
+                        "usage": 0,
+                        "dataSpace": 0
+                    }
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,96 @@
+[
+    {
+		"scene_name": "config",
+        "rear_lux_thresh":4000,
+		"front_lux_thresh":4000
+		
+    },
+	{
+        "scene_name": "front_light",
+        "scene_config": {
+            "beta": 0.2,
+            "mouth": 0.4,
+            "eye": 0.5,
+            "eyebrow": 0.4,
+            "smoothness": 1.0,
+            "blend_weight_border": 0.3,
+            "blend_weight_eyebrow": 0.9,
+            "blend_weight_mouth": 0.8,
+            "blend_weight_eye": 0.85,
+            "blend_weight_face": 0.2,
+            "blend_weight_jaw": 0.5,
+            "quality_level": 1,
+            "iso_thres": 3600,
+            "eyelight_strength": 0.45,
+            "smallface_eyebrow_subblendweight_value": 0.2,
+            "smallface_eyebrow_subblendweight_facesize_threshold": 850,
+            "extend": "L2c3MR0xODAmDSQhNSZ2aGJjend4cmA+OzAgOh0xOzcwNzAMJCQwDTAyICw7cHhzZmtkfmJxOSohJioMJy01NicMNyk9Ih0lNSkhN2BpdHV6am5zdjQhMy46IDx2aGIodiQwODcgIBowNzYyPSkLJSc6My0gcHhzZWl0cCY2ICQ9Ph0kMSwzOjYMOCAyJmBpdHV6a25zdiExJiM6OBojNys0PDELIzcyOCwgKx0nPDcxIWBpdB5lfHd/dHZ6Yh9/dGcwNzYyPSkLJSc6My0gDTA6My0gcHhzZGtmL25zdjAnNx07MBo1NiYMOio9ISdxbmVlfmJxITYxDSo3Cyc4Nyw3CyY3cHhzZWl0cDcgMRo8Nh0xOCA6Nh03MTE1Oy5xbmVlfmJxITYxDSo3Cy81JR0xOCA6NmBpdHR4cmAmJyALOiYMOSohJioMMSEzN2BpdHR4cmAmJyALOiYMOSohJioMJy01NicMNikxPCZxbmVlLw=="
+        }
+    },
+    {
+        "scene_name": "front_dark",
+        "scene_config": {
+            "beta": 0.2,
+            "mouth": 0.4,
+            "eye": 0.5,
+            "eyebrow": 0.4,
+            "smoothness": 1.0,
+            "blend_weight_border": 0.3,
+            "blend_weight_eyebrow": 0.9,
+            "blend_weight_mouth": 0.8,
+            "blend_weight_eye": 0.85,
+            "blend_weight_face": 0.2,
+            "blend_weight_jaw": 0.5,
+            "quality_level": 1,
+            "iso_thres": 3600,
+            "eyelight_strength": 0.45,
+            "smallface_eyebrow_subblendweight_value": 0.2,
+            "smallface_eyebrow_subblendweight_facesize_threshold": 850,
+            "extend": "L2c3MR0xODAmDSQhNSZ2aGJjend4cmA+OzAgOh0xOzcwNzAMJCQwDTAyICw7cHhzZmtkfmJxOSohJioMJy01NicMNyk9Ih0lNSkhN2BpdHV6am5zdjQhMy46IDx2aGIodiQwODcgIBowNzYyPSkLJSc6My0gcHhzZWl0cCY2ICQ9Ph0kMSwzOjYMOCAyJmBpdHV6a25zdiExJiM6OBojNys0PDELIzcyOCwgKx0nPDcxIWBpdB5lfHd/dHZ6Yh9/dGcwNzYyPSkLJSc6My0gDTA6My0gcHhzZGtmL25zdjAnNx07MBo1NiYMOio9ISdxbmVlfmJxITYxDSo3Cyc4Nyw3CyY3cHhzZWl0cDcgMRo8Nh0xOCA6Nh03MTE1Oy5xbmVlfmJxITYxDSo3Cy81JR0xOCA6NmBpdHR4cmAmJyALOiYMOSohJioMMSEzN2BpdHR4cmAmJyALOiYMOSohJioMJy01NicMNikxPCZxbmVlLw=="
+        }
+    },
+	{
+        "scene_name": "rear_light",
+        "scene_config": {
+            "beta": 0.1,
+            "mouth": 0.2,
+            "eye": 0.3,
+            "eyebrow": 0.3,
+            "smoothness": 1.0,
+            "blend_weight_border": 0.3,
+            "blend_weight_eyebrow": 0.2,
+            "blend_weight_mouth": 0.5,
+            "blend_weight_eye": 0.55,
+            "blend_weight_face": 0.35,
+            "blend_weight_jaw": 0.3,
+            "quality_level": 0,
+            "iso_thres": 3600,
+            "eyelight_strength": 0.45,
+            "smallface_eyebrow_subblendweight_value": 0.2,
+            "smallface_eyebrow_subblendweight_facesize_threshold": 850,
+            "extend": "L2c3MR0xODAmDSQhNSZ2aGJjend4cmA+OzAgOh0xOzcwNzAMJCQwDTAyICw7cHhzZmtkfmJxOSohJioMJy01NicMNyk9Ih0lNSkhN2BpdHV6am5zdjQhMy46IDx2aGIodiQwODcgIBowNzYyPSkLJSc6My0gcHhzZWl0cCY2ICQ9Ph0kMSwzOjYMOCAyJmBpdHV6a25zdiExJiM6OBojNys0PDELIzcyOCwgKx0nPDcxIWBpdB5lfHd/dHZ6Yh9/dGcwNzYyPSkLJSc6My0gDTA6My0gcHhzZGtmL25zdjAnNx07MBo1NiYMOio9ISdxbmVlfmJxITYxDSo3Cyc4Nyw3CyY3cHhzZWl0cDcgMRo8Nh0xOCA6Nh03MTE1Oy5xbmVlfmJxITYxDSo3Cy81JR0xOCA6NmBpdHR4cmAmJyALOiYMOSohJioMMSEzN2BpdHR4cmAmJyALOiYMOSohJioMJy01NicMNikxPCZxbmVlLw=="
+        }
+    },
+    {
+        "scene_name": "rear_dark",
+        "scene_config": {
+            "beta": 0.1,
+            "mouth": 0.2,
+            "eye": 0.3,
+            "eyebrow": 0.3,
+            "smoothness": 1.0,
+            "blend_weight_border": 0.3,
+            "blend_weight_eyebrow": 0.2,
+            "blend_weight_mouth": 0.5,
+            "blend_weight_eye": 0.55,
+            "blend_weight_face": 0.35,
+            "blend_weight_jaw": 0.3,
+            "quality_level": 0,
+            "iso_thres": 3600,
+            "eyelight_strength": 0.45,
+            "smallface_eyebrow_subblendweight_value": 0.2,
+            "smallface_eyebrow_subblendweight_facesize_threshold": 850,
+            "extend": "L2c3MR0xODAmDSQhNSZ2aGJjend4cmA+OzAgOh0xOzcwNzAMJCQwDTAyICw7cHhzZmtkfmJxOSohJioMJy01NicMNyk9Ih0lNSkhN2BpdHV6am5zdjQhMy46IDx2aGIodiQwODcgIBowNzYyPSkLJSc6My0gcHhzZWl0cCY2ICQ9Ph0kMSwzOjYMOCAyJmBpdHV6a25zdiExJiM6OBojNys0PDELIzcyOCwgKx0nPDcxIWBpdB5lfHd/dHZ6Yh9/dGcwNzYyPSkLJSc6My0gDTA6My0gcHhzZGtmL25zdjAnNx07MBo1NiYMOio9ISdxbmVlfmJxITYxDSo3Cyc4Nyw3CyY3cHhzZWl0cDcgMRo8Nh0xOCA6Nh03MTE1Oy5xbmVlfmJxITYxDSo3Cy81JR0xOCA6NmBpdHR4cmAmJyALOiYMOSohJioMMSEzN2BpdHR4cmAmJyALOiYMOSohJioMJy01NicMNikxPCZxbmVlLw=="
+        }
+    }
+]

@@ -1,0 +1,211 @@
+{
+    "PipelineName": "Thirdpartysnapshotjpegr",
+    "NodesList": {
+        "Node": [
+            {
+                "NodeName": "com.xiaomi.plugin.hwproc",
+                "NodeInstance": "BssInstance",
+                "NodeProperty": [
+                    {
+                        "NodePropertyName": "NodeMask",
+                        "NodePropertyValue": 1
+                    }
+                ]
+            },
+            {
+                "NodeName": "com.xiaomi.plugin.hwproc",
+                "NodeInstance": "MfnrInstance",
+                "NodeProperty": [
+                    {
+                        "NodePropertyName": "NodeMask",
+                        "NodePropertyValue": 4
+                    }
+                ]
+            },
+            {
+                "NodeName": "com.xiaomi.plugin.virtual",
+                "NodeInstance": "virtualInstanceBssToGainmap",
+                "NodeProperty":[
+                    {
+                         "NodePropertyName":"NodeMask",
+                         "NodePropertyValue":512
+                    }
+                ]
+            },
+            {
+                "NodeName": "com.xiaomi.plugin.virtual",
+                "NodeInstance": "virtualInstanceAnchorToGainmap",
+                "NodeProperty":[
+                    {
+                         "NodePropertyName":"NodeMask",
+                         "NodePropertyValue":512
+                    }
+                ]
+            },
+            {
+                "NodeName": "com.xiaomi.plugin.hwproc",
+                "NodeInstance": "Raw2YuvInstanceGainmapAnchor",
+                "NodeProperty": [
+                    {
+                        "NodePropertyName": "NodeMask",
+                        "NodePropertyValue": 4
+                    }
+                ]
+            },
+            {
+                "NodeName": "com.xiaomi.plugin.gainmap",
+                "NodeInstance": "GainMapInstance0",
+                "NodeProperty":[
+                    {
+                        "NodePropertyName":"NodeMask",
+                        "NodePropertyValue":128
+                    }
+                ]
+            },
+            {
+                "NodeName": "com.xiaomi.plugin.jpegrAggr",
+                "NodeInstance": "jpegrAggrInstance"
+            },
+            {
+                "NodeName": "com.xiaomi.plugin.hwjpeg",
+                "NodeInstance": "JpegInstance"
+            }
+        ]
+    },
+    "PortLinkages": {
+        "Link": [
+            {
+                "SrcPort": {
+                    "PortId": 0,
+                    "NodeInstance": "SourceBuffer"
+                },
+                "DstPort": {
+                    "PortId": 0,
+                    "NodeInstance": "virtualInstanceAnchorToGainmap",
+                    "PortFormat": "RAW10"
+                }
+            },
+            {
+                "SrcPort": {
+                    "PortId": 0,
+                    "NodeInstance": "virtualInstanceAnchorToGainmap"
+                },
+                "DstPort": {
+                    "PortId": 0,
+                    "NodeInstance": "MfnrInstance",
+                    "PortFormat": "RAW10"
+                }
+            },
+            {
+                "SrcPort": {
+                    "PortId": 3,
+                    "NodeInstance": "SourceBuffer"
+                },
+                "DstPort": {
+                    "PortId": 3,
+                    "NodeInstance": "BssInstance",
+                    "PortFormat": "P010"
+                }
+            },
+            {
+                "SrcPort": {
+                    "PortId": 3,
+                    "NodeInstance": "BssInstance"
+                },
+                "DstPort": {
+                    "PortId": 3,
+                    "NodeInstance": "virtualInstanceBssToGainmap",
+                    "PortFormat": "P010"
+                }
+            },
+            {
+                "SrcPort": {
+                    "PortId": 3,
+                    "NodeInstance": "virtualInstanceBssToGainmap",
+                    "PortFormat": "P010"
+                },
+                "DstPort": {
+                    "PortId": 3,
+                    "NodeInstance": "MfnrInstance"
+                }
+            },
+            {
+                "SrcPort": {
+                    "PortId": 0,
+                    "NodeInstance": "MfnrInstance",
+                    "PortFormat": "YUV420_NV21"
+                },
+                "DstPort": {
+                    "PortId": 0,
+                    "NodeInstance": "JpegInstance",
+                    "PortFormat": "YUV420_NV21"
+                }
+            },
+            {
+                "SrcPort": {
+                    "PortId": 0,
+                    "NodeInstance": "JpegInstance",
+                    "PortFormat": "BLOB"
+                },
+                "DstPort": {
+                    "PortId": 0,
+                    "NodeInstance": "jpegrAggrInstance"
+                }
+            },
+            {
+                "SrcPort": {
+                    "PortId": 1,
+                    "NodeInstance": "virtualInstanceAnchorToGainmap"
+                },
+                "DstPort": {
+                    "PortId": 1,
+                    "NodeInstance": "Raw2YuvInstanceGainmapAnchor",
+                    "PortFormat": "RAW10"
+                }
+            },
+            {
+                "SrcPort": {
+                    "PortId": 2,
+                    "NodeInstance": "virtualInstanceBssToGainmap"
+                },
+                "DstPort": {
+                    "PortId": 2,
+                    "NodeInstance": "Raw2YuvInstanceGainmapAnchor"
+                }
+            },
+            {
+                "SrcPort": {
+                    "PortId": 0,
+                    "NodeInstance": "Raw2YuvInstanceGainmapAnchor",
+                    "PortFormat": "P010"
+                },
+                "DstPort": {
+                    "PortId": 2,
+                    "NodeInstance": "GainMapInstance0"
+                }
+            },
+            {
+                "SrcPort": {
+                    "PortId": 0,
+                    "NodeInstance": "GainMapInstance0",
+                    "PortFormat": "Y8"
+                },
+                "DstPort": {
+                    "PortId": 2,
+                    "NodeInstance": "jpegrAggrInstance"
+                }
+            },
+            {
+                "SrcPort": {
+                    "PortId": 0,
+                    "NodeInstance": "jpegrAggrInstance",
+                    "PortFormat": "BLOB"
+                },
+                "DstPort": {
+                    "PortId": 0,
+                    "NodeInstance": "SinkBuffer0"
+                }
+            }
+        ]
+    }
+}

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<sixth_wrapper_config>
+    <config_element name="hpf" enable="0" frq1="109" frq2="53" 
+        description="set hpf req"/>
+    <config_element name="vdd" enable="1" battery_node="sys/devices/platform/soc/11280000.i2c/i2c-5/5-0034/11280000.i2c:mt6375@34:mtk-gauge/power_supply/battery/voltage_now" 
+        vdd_step="10000" description="read vdd and set ad_hoc gain, vdd_step(mv)">
+        <value_map threshold="3700000" ratio_value ="100,100" description="ad_hoc ratio"/>
+        <value_map threshold="3600000" ratio_value ="90,90" description="ad_hoc ratio"/>
+        <value_map threshold="3500000" ratio_value ="85,85" description="ad_hoc ratio"/>
+        <value_map threshold="3400000" ratio_value ="80,80" description="ad_hoc ratio"/>
+        <value_map threshold="3300000" ratio_value ="75,75" description="ad_hoc ratio"/>
+        <value_map threshold="3200000" ratio_value ="70,70" description="ad_hoc ratio"/>
+        <value_map threshold="3100000" ratio_value ="65,65" description="ad_hoc ratio"/>
+        <value_map threshold="3000000" ratio_value ="60,60" description="ad_hoc ratio"/>
+        <value_map threshold="2900000" ratio_value ="55,55" description="ad_hoc ratio"/>
+        <value_map threshold="2800000" ratio_value ="50,50" description="ad_hoc ratio"/>
+        <value_map threshold="0" ratio_value ="45,45" description="ad_hoc ratio"/>
+    </config_element> 
+    <config_element name="timer_cfg" enable="1" description="turn on/off timer"/>
+    <config_element name="debug_cfg" enable="0" description="turn on/off debug msg"/>
+    <config_element name="pvdd_limit_cfg" enable="0" description="turn on/off pvdd limit"/>
+    <config_element name="lp_protect_cfg" enable="1" description="turn on/off interval set lp value"/>
+    <config_element name="algo_val_set" enable="1" description="set algo param, eg, r0, f0"/>
+    <config_element name="lp_set" enable="1" description="Is init lp value"/>
+</sixth_wrapper_config>

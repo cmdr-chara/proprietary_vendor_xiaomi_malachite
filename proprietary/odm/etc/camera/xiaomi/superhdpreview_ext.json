@@ -1,0 +1,106 @@
+{
+    "PipelineName": "SuperHdPreview",
+    "NodesList": {
+        "Node": [
+            {
+                "NodeName": "com.xiaomi.plugin.hwhalproc",
+                "NodeInstance": "VSEMCNRInstance0",
+                "NodeProperty": [
+                    {
+                        "NodePropertyName": "NodeMask",
+                        "NodePropertyValue": 32768
+                    }
+                ]
+            },
+            {
+                "NodeName": "com.xiaomi.plugin.asdasync",
+                "NodeInstance": "AsdAsyncInstance0",
+                "NodeProperty": [
+                    {
+                        "NodePropertyName": "NodeMask",
+                        "NodePropertyValue": 1
+                    }
+                ]
+            },
+            {
+                "NodeName": "com.xiaomi.plugin.hwhalproc",
+                "NodeInstance": "WPEPQInstance0",
+                "NodeProperty": [
+                    {
+                        "NodePropertyName": "NodeMask",
+                        "NodePropertyValue": 32768
+                    }
+                ]
+            },
+            {
+                "NodeName": "",
+                "NodeInstance": "virtualSinkbuffer",
+                "NodeProperty":[
+                    {
+                         "NodePropertyName":"NodeMask",
+                         "NodePropertyValue":1536
+                    }
+                ]
+            }
+        ]
+    },
+    "PortLinkages": {
+        "Link": [
+            {
+                "SrcPort": {
+                    "PortId": 0,
+                    "NodeInstance": "SourceBuffer"
+                },
+                "DstPort": {
+                    "PortId": 0,
+                    "NodeInstance": "VSEMCNRInstance0",
+                    "PortFormat": "YUV420_NV12"
+                }
+            },
+            {
+                "SrcPort": {
+                    "PortId": 0,
+                    "NodeInstance": "VSEMCNRInstance0",
+                    "PortFormat": "YUV420_NV12"
+                },
+                "DstPort": {
+                    "PortId": 0,
+                    "NodeInstance": "WPEPQInstance0",
+                    "PortFormat": "YUV420_NV12"
+                }
+            },
+            {
+                "SrcPort": {
+                    "PortId": 0,
+                    "NodeInstance": "WPEPQInstance0",
+                    "PortFormat": "YUV420_NV12"
+                },
+                "DstPort": {
+                    "PortId": 0,
+                    "NodeInstance": "virtualSinkbuffer"
+                }
+            },
+            {
+                "SrcPort": {
+                    "PortId": 0,
+                    "NodeInstance": "virtualSinkbuffer"
+                },
+                "DstPort": {
+                    "PortId": 0,
+                    "NodeInstance": "AsdAsyncInstance0",
+                    "PortFormat": "YUV420_NV12"
+                }
+            },
+            {
+                "SrcPort": {
+                    "PortId": 1,
+                    "NodeInstance": "WPEPQInstance0"
+                },
+                "DstPort": {
+                    "PortId": 1,
+                    "NodeInstance": "SinkBuffer1"
+                }
+            }
+        ]
+    }
+}

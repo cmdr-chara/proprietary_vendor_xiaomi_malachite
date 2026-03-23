@@ -1,0 +1,12 @@
+{
+    "offlinedebugmask" : 0,
+    "Soc" : "MTK",
+    "SupportMDBokeh" : true,
+    "JsonFileRemap":{
+        "prop": "ro.boot.camera.config",
+        "map": [["0","_ext"],
+                ["1",""]]
+    },
+    "Mivi3LogLevel" : 5,
+    "Mivi3LogGroupsEnable" : 0
+}

@@ -1,0 +1,217 @@
+{
+    "PipelineName": "Cinelook",
+    "NodesList": {
+        "Node": [
+            {
+                "NodeName": "com.xiaomi.plugin.hwstream",
+                "NodeInstance": "VSEMCNRPQInstance0",
+                "NodeProperty": [
+                    {
+                        "NodePropertyName": "NodeMask",
+                        "NodePropertyValue": 2
+                    }
+                ]
+            },
+            {
+                "NodeName": "com.xiaomi.plugin.videofilter",
+                "NodeInstance": "VFInstance0"
+            },
+            {
+                "NodeName": "com.xiaomi.plugin.virtual",
+                "NodeInstance": "virtualInstance0",
+                "NodeProperty":[
+                    {
+                         "NodePropertyName":"NodeMask",
+                         "NodePropertyValue":512
+                    }
+                ]
+            },
+            {
+                "NodeName": "com.xiaomi.plugin.mihisv2",
+                "NodeInstance": "HISV2Instance0",
+                "NodeProperty": [
+                    {
+                        "NodePropertyName": "NodeMask",
+                        "NodePropertyValue": 1
+                    }
+                ]
+            },
+            {
+                "NodeName": "com.xiaomi.plugin.mihisv3",
+                "NodeInstance": "HISV3Instance0",
+                "NodeProperty": [
+                    {
+                        "NodePropertyName": "NodeMask",
+                        "NodePropertyValue": 8193
+                    }
+                ]
+            },
+            {
+                "NodeName": "com.xiaomi.plugin.hwstream",
+                "NodeInstance": "WPEWARPPQInstance0",
+                "NodeProperty": [
+                    {
+                        "NodePropertyName": "NodeMask",
+                        "NodePropertyValue": 130
+                    }
+                ]
+            },
+            {
+                "NodeName": "com.xiaomi.plugin.hwstream",
+                "NodeInstance": "WPEWARPPQInstance1",
+                "NodeProperty": [
+                    {
+                        "NodePropertyName": "NodeMask",
+                        "NodePropertyValue": 2
+                    }
+                ]
+            },
+            {
+                "NodeName": "com.xiaomi.plugin.hwjpeg",
+                "NodeInstance": "JpegInstance"
+            }
+        ]
+    },
+    "PortLinkages": {
+        "Link": [
+            {
+                "SrcPort": {
+                    "PortId": 0,
+                    "NodeInstance": "SourceBuffer"
+                },
+                "DstPort": {
+                    "PortId": 0,
+                    "NodeInstance": "VSEMCNRPQInstance0",
+                    "PortFormat": "P010",
+                    "RangeProfile": 2,
+                    "DataSpace": 168165376
+                }
+            },
+            {
+                "SrcPort": {
+                    "PortId": 0,
+                    "NodeInstance": "VSEMCNRPQInstance0",
+                    "PortFormat": "P010",
+                    "RangeProfile": 2,
+                    "DataSpace": 302383104
+                },
+                "DstPort": {
+                    "PortId": 0,
+                    "NodeInstance": "VFInstance0"
+                }
+            },
+            {
+                "SrcPort": {
+                    "PortId": 0,
+                    "NodeInstance": "VFInstance0",
+                    "PortFormat": "P010",
+                    "RangeProfile": 2,
+                    "DataSpace": 302383104
+                },
+                "DstPort": {
+                    "PortId": 0,
+                    "NodeInstance": "virtualInstance0"
+                }
+            },
+            {
+                "SrcPort": {
+                    "PortId": 0,
+                    "NodeInstance": "virtualInstance0",
+                    "PortFormat": "P010",
+                    "RangeProfile": 2,
+                    "DataSpace": 302383104
+                },
+                "DstPort": {
+                    "PortId": 0,
+                    "NodeInstance": "HISV2Instance0"
+                }
+            },
+            {
+                "SrcPort": {
+                    "PortId": 0,
+                    "NodeInstance": "HISV2Instance0",
+                    "PortFormat": "P010",
+                    "RangeProfile": 2,
+                    "DataSpace": 302383104
+                },
+                "DstPort": {
+                    "PortId": 0,
+                    "NodeInstance": "WPEWARPPQInstance0"
+                }
+            },
+            {
+                "SrcPort": {
+                    "PortId": 1,
+                    "NodeInstance": "virtualInstance0",
+                    "PortFormat": "P010",
+                    "RangeProfile": 2,
+                    "DataSpace": 302383104
+                },
+                "DstPort": {
+                    "PortId": 1,
+                    "NodeInstance": "HISV3Instance0"
+                }
+            },
+            {
+                "SrcPort": {
+                    "PortId": 1,
+                    "NodeInstance": "HISV3Instance0",
+                    "PortFormat": "P010",
+                    "RangeProfile": 2,
+                    "DataSpace": 302383104
+                },
+                "DstPort": {
+                    "PortId": 1,
+                    "NodeInstance": "WPEWARPPQInstance1"
+                }
+            },
+            {
+                "SrcPort": {
+                    "PortId": 0,
+                    "NodeInstance": "WPEWARPPQInstance0",
+                    "PortFormat": "P010",
+                    "RangeProfile": 2,
+                    "DataSpace": 302383104
+                },
+                "DstPort": {
+                    "PortId": 0,
+                    "NodeInstance": "SinkBuffer"
+                }
+            },
+            {
+                "SrcPort": {
+                    "PortId": 1,
+                    "NodeInstance": "WPEWARPPQInstance1",
+                    "PortFormat": "P010",
+                    "RangeProfile": 2,
+                    "DataSpace": 302383104
+                },
+                "DstPort": {
+                    "PortId": 1,
+                    "NodeInstance": "SinkBuffer1"
+                }
+            },
+            {
+                "SrcPort": {
+                    "PortId": 2,
+                    "NodeInstance": "WPEWARPPQInstance0"
+                },
+                "DstPort": {
+                    "PortId": 2,
+                    "NodeInstance": "JpegInstance"
+                }
+            },
+            {
+                "SrcPort": {
+                    "PortId": 2,
+                    "NodeInstance": "JpegInstance",
+                    "PortFormat": "BLOB"
+                },
+                "DstPort": {
+                    "PortId": 2,
+                    "NodeInstance": "SinkBuffer2"
+                }
+            }
+        ]
+    }
+}

@@ -1,0 +1,355 @@
+{
+    "QuickviewSupport": 1,
+    "MaxMFNRCount":[3,3],//MFNR并行任务
+    "HighQualityQuickShotSupport":["0x346DF3F","0x346DF3F"],//[低端,高端]
+    "QuickShotDelayTimeMask":"0x8020200222030",
+    "DevCondition":{ //触发资源应急
+        "PSIStressNum":50,
+        "PhtType":"0x26",//[1,2,5] 10 0110    Photographer_HDR = 1, Photographer_SR = 2, Photographer_HDRSR = 5,
+        "PSI":0//psi触发转B2Y
+    },
+    "SpecialPerf":[
+        {
+            "PerfIndic":0,
+            "SupportType":[9],
+            "ShutterIndex":[0]
+        },
+        {
+            "PerfIndic":1,//关键字 0 S2S  \  1 S2G
+            "SupportType":[3],//夜景
+            "ShutterIndex":[0]  //0：第一帧   1：最后一帧
+        }
+    ],
+    "PhotographerInfoMap":[
+        {
+            //MIVIFull 0001 \MFNRFull 0010 \mihalmfnrfull 0100\quickshot 1000
+            //原模式：rawhdr
+            "PhtType":[31],
+            "QuickShotConfig"://触发条件
+            {
+                "MaxMIVICount":[2,2],//后处理任务数
+                "QuickShotTypeUpdate":
+                [
+                    {
+                        "NewType":[0],//切B2Y
+                        "NewFrames":[1],
+                        "Condition"://条件
+                        {
+                            "DevVersion":0,//0低端 1高端  2无限制
+                            "ConditionType":0,//与
+                            "ConditionInc":"0x09",// AppQuickSnapshot  && MIVIFull  触发 (1001)
+                            "ConditionCam":2 // 0rear 1front 2无限制
+                        }
+                    },
+                    {
+                        "NewType":[8,9],//切MFNR (vendor/mihal)
+                        "NewFrames":[1,6],// (vendor  1 ,mihal 6)根据是否上移决定
+                        "Condition"://条件
+                        {
+                            "DevVersion":2,//0低端 1高端  2无限制
+                            "ConditionType":1,//或
+                            "ConditionInc":"0x09",// // AppQuickSnapshot  || MIVIFull  触发 (1001)
+                            "ConditionCam":2 //0rear 1front 2无限制
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            //原模式：sr
+            "PhtType":[2],
+            "SupportAnchorQuickview":true,
+            "QuickShotConfig"://触发条件
+            {
+                "ZoomRatio":[0.0,9.9],
+                "MaxMIVICount":[2,2],//后处理任务数
+                "QuickShotTypeUpdate":
+                [
+                    {
+                        "NewType":[8,9],//切MFNR (vendor/mihal)
+                        "NewFrames":[1,6],// (vendor  1 ,mihal 6)根据是否上移决定
+                        "Condition"://条件
+                        {
+                            "DevVersion":2, //0低端 1高端  2无限制
+                            "ConditionType":1,//或
+                            "ConditionInc":"0x09",// AppQuickSnapshot  || MIVIFull  触发 (1001)
+                            "ConditionCam":2 // 0rear 1front 2无限制
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            //原模式：hdrsr
+            "PhtType":[5],
+            "QuickShotConfig"://触发条件
+            {
+                "ZoomRatio":[0.0,9.9],
+                "MaxMIVICount":[2,2],//后处理任务数
+                "QuickShotTypeUpdate":
+                [
+                   {
+                        "NewType":[8,9],//切MFNR (vendor/mihal)
+                        "NewFrames":[1,6],// (vendor  1 ,mihal 6)根据是否上移决定
+                        "Condition"://条件
+                        {
+                            "DevVersion":2, //0低端 1高端  2无限制
+                            "ConditionType":0,//与
+                            "ConditionInc":"0x09",// MIVIFull && QuickClick 触发 （1001）
+                            "ConditionCam":2 // 0rear 1front 2无限制
+                        }
+                    },
+                    {
+                        "NewType":[2],//切sr 
+                        "NewFrames":[6],//6帧
+                        "Condition"://条件
+                        {
+                            "DevVersion":2, //0低端 1高端  2无限制
+                            "ConditionType":1,//或
+                            "ConditionInc":"0x08",// AppQuickSnapshot  触发 (1000)
+                            "ConditionCam":2 // 0rear 1front 2无限制
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "PhtType":[8],//vendor mfnr
+            "QuickShotConfig"://触发条件
+            {
+                "MaxMIVICount":[3,3],//后处理任务数
+                "QuickShotTypeUpdate":
+                [
+                   {
+                        "NewType":[0],//根据是否 上移决定
+                        "NewFrames":[1],
+                        "Condition":
+                        {
+                            "DevVersion":2,
+                            "ConditionType":1,//或
+                            "ConditionInc":"0x02", // VendorMfnrFull 触发 （0010）
+                            "ConditionCam":2 // 0rear 1front 2无限制
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "PhtType":[9],//mihal mfnr
+            "SupportAnchorQuickview":true,
+            "QuickShotConfig"://触发条件
+            {
+                "MaxMIVICount":[3,3],//后处理任务数
+                "QuickShotTypeUpdate":
+                [
+                    {
+                        "NewType":[0],//切B2Y
+                        "NewFrames":[1],
+                        "Condition":
+                        {
+                            "DevVersion":2, //0低端 1高端  2无限制
+                            "ConditionType":0,//与
+                            "ConditionInc":"0x05",// MihalMFNRFull （0100）
+                            "ConditionCam":2 // 0rear 1front 2无限制
+                        }
+                    },
+                    {
+                        "NewType":[9],//不切
+                        "NewFrames":[6],//设置为6帧
+                        "Condition":
+                        {
+                            "DevVersion":2, //0低端 1高端  2无限制
+                            "ConditionType":1,//或
+                            "ConditionInc":"0x08",// AppQuickSnapshot （1000）
+                            "ConditionCam":2 // 0rear 1front 2无限制
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            //原模式：dual bokeh mihal mfnr
+            "PhtType":[16],
+            "SupportAttachPreview":true,
+            "SupportAnchorQuickview":true,
+            "QuickShotConfig"://触发条件
+            {
+                "MaxMIVICount":[2,2],//后处理任务数
+                "QuickShotTypeUpdate":
+                [
+                    {
+                        "NewType":[16],//不切
+                        "NewFrames":[3],//设置为3帧
+                        "Condition":
+                        {
+                            "DevVersion":2, //0低端 1高端  2无限制
+                            "ConditionType":1,//或
+                            "ConditionInc":"0x09",//MIVIFull||QuickClick 触发 （1001）
+                            "ConditionCam":2 // 0rear 1front 2无限制
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            //原模式：dual bokeh hdr
+            "PhtType":[12],
+            "SupportAnchorQuickview":true,
+            "QuickShotConfig"://触发条件
+            {
+                "MaxMIVICount":[2,2],//后处理任务数
+                "QuickShotTypeUpdate":
+                [
+                    {
+                        "NewType":[16],//切bokeh mihal mfnr
+                        "NewFrames":[3],//设置为3帧
+                        "Condition":
+                        {
+                            "DevVersion":2, //0低端 1高端  2无限制
+                            "ConditionType":0,//与
+                            "ConditionInc":"0x09",// MIVIFull && QuickClick 触发 （1001）
+                            "ConditionCam":2 // 0rear 1front 2无限制
+                        }
+                    },
+                    {
+                        "NewType":[16],//切bokeh mihal mfnr
+                        "NewFrames":[6],//设置为6帧
+                        "Condition":
+                        {
+                            "DevVersion":2, //0低端 1高端  2无限制
+                            "ConditionType":1,//或
+                            "ConditionInc":"0x08",//QuickClick 触发 （1000）
+                            "ConditionCam":2 // 0rear 1front 2无限制
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            //原模式：single bokeh hdr
+            "PhtType":[34],
+            "SupportAttachPreview":true,
+            "SupportAnchorQuickview":true,
+            "QuickShotConfig"://触发条件
+            {
+                "MaxMIVICount":[2,2],//后处理任务数
+                "QuickShotTypeUpdate":
+                [
+                    {
+                        "NewType":[18],//切bokeh mihal mfnr
+                        "NewFrames":[3],//设置为3帧
+                        "Condition":
+                        {
+                            "DevVersion":2, //0低端 1高端  2无限制
+                            "ConditionType":0,//与
+                            "ConditionInc":"0x09",// MIVIFull && QuickClick 触发 （1001）
+                            "ConditionCam":2 // 0rear 1front 2无限制
+                        }
+                    },
+                    {
+                        "NewType":[18],//切bokeh mihal mfnr
+                        "NewFrames":[6],//设置为6帧
+                        "Condition":
+                        {
+                            "DevVersion":2, //0低端 1高端  2无限制
+                            "ConditionType":1,//或
+                            "ConditionInc":"0x08",//QuickClick 触发 （1000）
+                            "ConditionCam":2 // 0rear 1front 2无限制
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            //原模式：single bokeh mihal mfnr
+            "PhtType":[18],
+            "SupportAnchorQuickview":true,
+            "QuickShotConfig"://触发条件
+            {
+                "MaxMIVICount":[2,2],//后处理任务数
+                "QuickShotTypeUpdate":
+                [
+                    {
+                        "NewType":[18],//切single bokeh mihal mfnr
+                        "NewFrames":[3],//设置为3帧
+                        "Condition":
+                        {
+                            "DevVersion":2, //0低端 1高端  2无限制
+                            "ConditionType":0,//或
+                            "ConditionInc":"0x09",// MIVIFull && QuickClick 触发 （1001）
+                            "ConditionCam":2 // 0rear 1front 2无限制
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            //原模式：SE
+            "PhtType":[3],
+            "SupportAnchorQuickview":true,
+            "QuickShotConfig"://触发条件
+            {
+                "ZoomRatio":[0.0,9.9],
+                "MaxMIVICount":[2,2],//后处理任务数
+                "QuickShotTypeUpdate":
+                [
+                    {
+                        "NewType":[8,9],//切MFNR (vendor/mihal)
+                        "NewFrames":[1,8],// (vendor  1 ,mihal 8)根据是否上移决定
+                        "Condition"://条件
+                        {
+                            "DevVersion":2, //0低端 1高端  2无限制
+                            "ConditionType":1,//或
+                            "ConditionInc":"0x09",// AppQuickSnapshot  || MIVIFull  触发 (1001)
+                            "ConditionCam":2 // 0rear 1front 2无限制
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "PhtType":[26],//remosaic mfnr
+            "SupportAnchorQuickview":true,
+            "QuickShotConfig"://触发条件
+            {
+                "MaxMIVICount":[0,1],//后处理任务数
+                "QuickShotTypeUpdate":
+                [
+                    {
+                        "NewType":[25],//切hd mfnr
+                        "NewFrames":[6],
+                        "Condition":
+                        {
+                            "DevVersion":2, //0低端 1高端  2无限制
+                            "ConditionType":1,//或
+                            "ConditionInc":"0x09",// AppQuickSnapshot  || MIVIFull  触发 (1001)
+                            "ConditionCam":2 // 0rear 1front 2无限制
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "PhtType":[39],//remosaic single
+            "SupportAnchorQuickview":true,
+            "QuickShotConfig"://触发条件
+            {
+                "MaxMIVICount":[1,1],//后处理任务数
+                "QuickShotTypeUpdate":
+                [
+                    {
+                        "NewType":[25],//切hd mfnr
+                        "NewFrames":[6],
+                        "Condition":
+                        {
+                            "DevVersion":2, //0低端 1高端  2无限制
+                            "ConditionType":1,//或
+                            "ConditionInc":"0x01",// MIVIFull  触发 (0001)
+                            "ConditionCam":2 // 0rear 1front 2无限制
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}

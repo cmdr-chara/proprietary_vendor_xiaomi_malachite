@@ -1,0 +1,77 @@
+{
+    "PipelineName": "satburstsnapshot",
+    "NodesList": {
+      "Node": [
+        {
+            "NodeName": "com.xiaomi.plugin.hwproc",
+            "NodeInstance": "Raw2YuvInstance",
+            "NodeProperty": [
+                {
+                    "NodePropertyName": "NodeMask",
+                    "NodePropertyValue": 4
+                }
+            ]
+        },
+        {
+            "NodeName": "com.xiaomi.plugin.ldc",
+            "NodeInstance": "LdcInstance"
+        },
+        {
+            "NodeName": "com.xiaomi.plugin.hwjpeg",
+            "NodeInstance": "BurstJpegInstance"
+
+        }
+      ]
+    },
+    "PortLinkages": {
+        "Link": [
+        {
+             "SrcPort": {
+                "PortId": 0,
+                "NodeInstance": "SourceBuffer"
+            },
+            "DstPort": {
+                "PortId": 0,
+                "NodeInstance": "Raw2YuvInstance",
+                "PortFormat": "RAW16"
+            }
+        },
+        {
+            "SrcPort": {
+                "PortId": 0,
+                "NodeInstance": "Raw2YuvInstance",
+                "PortFormat": "YUV420_NV21",
+                "OutputBufferNumber": "FollowInPut"
+            },
+            "DstPort": {
+                "PortId": 0,
+                "NodeInstance": "LdcInstance",
+                "PortFormat": "YUV420_NV21"
+            }
+        },
+        {
+            "SrcPort": {
+                "PortId": 0,
+                "NodeInstance": "LdcInstance",
+                "PortFormat": "YUV420_NV21"
+            },
+            "DstPort": {
+                "PortId": 0,
+                "NodeInstance": "BurstJpegInstance",
+                "PortFormat": "YUV420_NV21"
+            }
+        },
+        {
+            "SrcPort": {
+                "PortId": 0,
+                "NodeInstance": "BurstJpegInstance",
+                "PortFormat": "BLOB"
+            },
+            "DstPort": {
+                "PortId": 0,
+                "NodeInstance": "SinkBuffer"
+            }
+        }
+        ]
+    }
+}
