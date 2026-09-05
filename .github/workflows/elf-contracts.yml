@@ -31,6 +31,12 @@ jobs:
           git diff --exit-code 28a87d5dda2c787dc839e76162ded180d59d5d42 HEAD -- proprietary Android.bp Android.mk malachite-vendor.mk BoardConfigVendor.mk
           mkdir elf-evidence
           { git rev-parse HEAD; readelf --version; } > elf-evidence/host.txt
+      - name: Install the missing fixture linker
+        run: |
+          set -euo pipefail
+          sudo apt-get update
+          sudo apt-get install --no-install-recommends -y lld
+          { clang --version; ld.lld --version; } >> elf-evidence/host.txt
       - name: Regression tests including native readelf on an ARM64 fixture
         run: python3 -m unittest discover -s tests -v
       - name: Inspect the five preserved camera audio and graphics libraries
