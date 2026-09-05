@@ -1,0 +1,45 @@
+name: Preserved vendor ELF contracts
+on:
+  push:
+    branches: [revival/elf-dependency-contracts]
+  pull_request:
+    branches: [lineage-23.2]
+permissions:
+  contents: read
+jobs:
+  inspect:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          persist-credentials: false
+          filter: blob:none
+          sparse-checkout-cone-mode: false
+          sparse-checkout: |
+            /tools/
+            /tests/
+            /proprietary/vendor/lib64/libmicamera_hal_core.so
+            /proprietary/vendor/lib64/libmialgoengine.so
+            /proprietary/vendor/lib64/libcodec2_fsr.so
+            /proprietary/vendor/lib64/hw/audio.primary.mt6878.so
+            /proprietary/vendor/lib64/hw/vendor.mediatek.hardware.pq_aidl-impl.so
+      - name: Assert preserved payload and generated build metadata
+        run: |
+          set -euo pipefail
+          git fetch --no-tags --depth=1 origin 28a87d5dda2c787dc839e76162ded180d59d5d42
+          git diff --exit-code 28a87d5dda2c787dc839e76162ded180d59d5d42 HEAD -- proprietary Android.bp Android.mk malachite-vendor.mk BoardConfigVendor.mk
+          mkdir elf-evidence
+          { git rev-parse HEAD; readelf --version; } > elf-evidence/host.txt
+      - name: Regression tests including native readelf on an ARM64 fixture
+        run: python3 -m unittest discover -s tests -v
+      - name: Inspect the five preserved camera audio and graphics libraries
+        run: python3 tools/audit_elf_contracts.py > elf-evidence/contracts.json
+      - name: Preserve metadata only including failed contracts
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: vendor-elf-${{ github.sha }}
+          path: elf-evidence/
+          if-no-files-found: error
+          retention-days: 7
