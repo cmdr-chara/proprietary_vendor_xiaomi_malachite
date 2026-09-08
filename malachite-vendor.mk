@@ -361,6 +361,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/malachite/proprietary/recovery/root/vendor/firmware/goodix_firmware_hill_10.bin:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/goodix_firmware_hill_10.bin \
     vendor/xiaomi/malachite/proprietary/recovery/root/vendor/firmware/goodix_firmware_hill_16.bin:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/goodix_firmware_hill_16.bin \
     vendor/xiaomi/malachite/proprietary/system/etc/public.libraries-mtk.txt:$(TARGET_COPY_OUT_SYSTEM)/etc/public.libraries-mtk.txt \
+    vendor/xiaomi/malachite/proprietary/system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.android.hotwordenrollment.common.util.xml \
     vendor/xiaomi/malachite/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/ParameterDB.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/ParameterDB.db \
     vendor/xiaomi/malachite/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/ae/ParameterDB_ae.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/ae/ParameterDB_ae.db \
     vendor/xiaomi/malachite/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/af/ParameterDB_af.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/af/ParameterDB_af.db \
@@ -722,6 +723,7 @@ PRODUCT_PACKAGES += \
     android.hardware.gnss-impl-mediatek \
     android.hardware.graphics.allocator-V2-mediatek \
     android.hardware.graphics.mapper@4.0-impl-mediatek \
+    android.hardware.soundtrigger3-impl \
     audio.primary.mt6878 \
     consumerir.common \
     fingerprint.fpc_fod.default \
@@ -734,6 +736,7 @@ PRODUCT_PACKAGES += \
     sensors.dynamic_sensor_hal \
     sensors.elliptic \
     sensors.mt6878 \
+    sound_trigger.primary.default \
     vendor.mediatek.hardware.camera.atms_aidl@1.0-impl \
     vendor.mediatek.hardware.camera.bgservice_aidl@1.0-impl \
     vendor.mediatek.hardware.camera.isphal_aidl@1.0-impl \
@@ -1566,6 +1569,9 @@ PRODUCT_PACKAGES += \
     tms-utils \
     com.google.android.widevine.nonupdatable \
     EuiccGoogle \
+    HotwordEnrollmentOKGoogleRISCV \
+    HotwordEnrollmentXGoogleRISCV \
+    com.android.hotwordenrollment.common.util \
     CommandService.xml \
     android.hardware.gatekeeper-service.mitee.xml \
     android.hardware.identity@5.0-service.mitee.xml \
