@@ -705,6 +705,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/malachite/proprietary/vendor/mitee/ta/f13010e0-2ae1-11e5-896a0002a5d5c51d.ta:$(TARGET_COPY_OUT_VENDOR)/mitee/ta/f13010e0-2ae1-11e5-896a0002a5d5c51d.ta
 
 PRODUCT_PACKAGES += \
+    7816-3-T1 \
     APUWareApusysAidlServer \
     APUWareUtilsAidlServer \
     arm.graphics-V4-ndk \
@@ -1405,8 +1406,12 @@ PRODUCT_PACKAGES += \
     malachites5khp3wide_mipi_raw_tuning \
     mtk000_mipi_raw_IdxMgr \
     mtk000_mipi_raw_tuning \
+    nfc_nci.thn31nfc.tms \
     libmisoundfx \
     libspatializer \
+    tms-cos-dl-common \
+    tms-cos-dl-ree \
+    tms-utils \
     vendor.mediatek.framework.mtksf_ext-V3-ndk \
     vendor.mediatek.hardware.apuware.apusys-V3-ndk \
     vendor.mediatek.hardware.apuware.utils-V1-ndk_vendor \
@@ -1459,8 +1464,8 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.pq_aidl-V4-ndk \
     vendor.mediatek.hardware.pq_aidl-V7-ndk \
     vendor.mediatek.hardware.videotelephony-V1-ndk \
-    vendor.tms.nfc-V1-ndk \
     vendor.tms.tmsnfc@1.0 \
+    vendor.tms.tmsnfc_aidl-V1-ndk \
     vendor.xiaomi.hardware.aidl.mtdservice-V1-ndk \
     vendor.xiaomi.hardware.aidlbgservice-V1-impl \
     vendor.xiaomi.hardware.aidlbgservice-V1-ndk \
@@ -1515,7 +1520,6 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.apuware.xrp-V1-ndk \
     vendor.mediatek.hardware.apuware.xrp@1.0 \
     vendor.mediatek.hardware.apuware.xrp@2.0 \
-    7816-3-T1 \
     com.xiaomi.plugin.arcrawhdr \
     com.xiaomi.plugin.arcsoftsr \
     com.xiaomi.plugin.asdasync \
@@ -1563,10 +1567,6 @@ PRODUCT_PACKAGES += \
     libHISCppAlgos_odm \
     libdeflicker \
     libhis_motion_tracker_odm \
-    nfc_nci.thn31nfc.tms \
-    tms-cos-dl-common \
-    tms-cos-dl-ree \
-    tms-utils \
     com.google.android.widevine.nonupdatable \
     EuiccGoogle \
     HotwordEnrollmentOKGoogleRISCV \
@@ -1602,6 +1602,7 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.composer@3.2-service \
     android.hardware.identity-service.mitee@5.0 \
     android.hardware.neuralnetworks-shim-service-mtk \
+    android.hardware.nfc-service-tms \
     android.hardware.security.keymint@3.0-service.mitee \
     camerahalserver \
     mtkfusionrild \
@@ -1621,7 +1622,6 @@ PRODUCT_PACKAGES += \
     tee-supplicant \
     volte_clientapi_ua \
     wlan_assistant \
-    android.hardware.nfc@1.2-service-tms \
     vendor.xiaomi.sensor.citsensorservice.aidl
 
 PRODUCT_PACKAGES += \
