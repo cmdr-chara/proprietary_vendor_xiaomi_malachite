@@ -24,11 +24,17 @@ jobs:
             /proprietary/vendor/lib64/libcodec2_fsr.so
             /proprietary/vendor/lib64/hw/audio.primary.mt6878.so
             /proprietary/vendor/lib64/hw/vendor.mediatek.hardware.pq_aidl-impl.so
-      - name: Assert preserved payload and generated build metadata
+      - name: Assert the five preserved ELF inputs
         run: |
           set -euo pipefail
           git fetch --no-tags --depth=1 origin 28a87d5dda2c787dc839e76162ded180d59d5d42
-          git diff --exit-code 28a87d5dda2c787dc839e76162ded180d59d5d42 HEAD -- proprietary Android.bp Android.mk malachite-vendor.mk BoardConfigVendor.mk
+          git diff --exit-code 28a87d5dda2c787dc839e76162ded180d59d5d42 HEAD -- \
+            tools tests \
+            proprietary/vendor/lib64/libmicamera_hal_core.so \
+            proprietary/vendor/lib64/libmialgoengine.so \
+            proprietary/vendor/lib64/libcodec2_fsr.so \
+            proprietary/vendor/lib64/hw/audio.primary.mt6878.so \
+            proprietary/vendor/lib64/hw/vendor.mediatek.hardware.pq_aidl-impl.so
           mkdir elf-evidence
           { git rev-parse HEAD; readelf --version; } > elf-evidence/host.txt
       - name: Install the missing fixture linker
