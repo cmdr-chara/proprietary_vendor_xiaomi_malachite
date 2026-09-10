@@ -9,6 +9,28 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/malachite/proprietary/odm/etc/SEC_THN31F_FW_VTP.txt.bin:$(TARGET_COPY_OUT_ODM)/etc/SEC_THN31F_FW_VTP.txt.bin \
     vendor/xiaomi/malachite/proprietary/odm/etc/SEC_THN31S_FW_VTP.txt.bin:$(TARGET_COPY_OUT_ODM)/etc/SEC_THN31S_FW_VTP.txt.bin \
     vendor/xiaomi/malachite/proprietary/odm/etc/SEC_THN31_FW_VTP.txt.bin:$(TARGET_COPY_OUT_ODM)/etc/SEC_THN31_FW_VTP.txt.bin \
+    vendor/xiaomi/malachite/proprietary/odm/etc/camera/110_BlackGold.png:$(TARGET_COPY_OUT_ODM)/etc/camera/110_BlackGold.png \
+    vendor/xiaomi/malachite/proprietary/odm/etc/camera/148_Mild.png:$(TARGET_COPY_OUT_ODM)/etc/camera/148_Mild.png \
+    vendor/xiaomi/malachite/proprietary/odm/etc/camera/149_LilyWhite.png:$(TARGET_COPY_OUT_ODM)/etc/camera/149_LilyWhite.png \
+    vendor/xiaomi/malachite/proprietary/odm/etc/camera/150_Bright.png:$(TARGET_COPY_OUT_ODM)/etc/camera/150_Bright.png \
+    vendor/xiaomi/malachite/proprietary/odm/etc/camera/151_Fresh.png:$(TARGET_COPY_OUT_ODM)/etc/camera/151_Fresh.png \
+    vendor/xiaomi/malachite/proprietary/odm/etc/camera/152_Limpid.png:$(TARGET_COPY_OUT_ODM)/etc/camera/152_Limpid.png \
+    vendor/xiaomi/malachite/proprietary/odm/etc/camera/153_KC64.png:$(TARGET_COPY_OUT_ODM)/etc/camera/153_KC64.png \
+    vendor/xiaomi/malachite/proprietary/odm/etc/camera/154_V250.png:$(TARGET_COPY_OUT_ODM)/etc/camera/154_V250.png \
+    vendor/xiaomi/malachite/proprietary/odm/etc/camera/155_H400.png:$(TARGET_COPY_OUT_ODM)/etc/camera/155_H400.png \
+    vendor/xiaomi/malachite/proprietary/odm/etc/camera/156_ColdWhite.png:$(TARGET_COPY_OUT_ODM)/etc/camera/156_ColdWhite.png \
+    vendor/xiaomi/malachite/proprietary/odm/etc/camera/157_Native.png:$(TARGET_COPY_OUT_ODM)/etc/camera/157_Native.png \
+    vendor/xiaomi/malachite/proprietary/odm/etc/camera/158_BWClassical.png:$(TARGET_COPY_OUT_ODM)/etc/camera/158_BWClassical.png \
+    vendor/xiaomi/malachite/proprietary/odm/etc/camera/159_Flowers.png:$(TARGET_COPY_OUT_ODM)/etc/camera/159_Flowers.png \
+    vendor/xiaomi/malachite/proprietary/odm/etc/camera/160_Vivid.png:$(TARGET_COPY_OUT_ODM)/etc/camera/160_Vivid.png \
+    vendor/xiaomi/malachite/proprietary/odm/etc/camera/161_KP160.png:$(TARGET_COPY_OUT_ODM)/etc/camera/161_KP160.png \
+    vendor/xiaomi/malachite/proprietary/odm/etc/camera/162_Natural.png:$(TARGET_COPY_OUT_ODM)/etc/camera/162_Natural.png \
+    vendor/xiaomi/malachite/proprietary/odm/etc/camera/163_KG200.png:$(TARGET_COPY_OUT_ODM)/etc/camera/163_KG200.png \
+    vendor/xiaomi/malachite/proprietary/odm/etc/camera/164_FC400.png:$(TARGET_COPY_OUT_ODM)/etc/camera/164_FC400.png \
+    vendor/xiaomi/malachite/proprietary/odm/etc/camera/165_C50D.png:$(TARGET_COPY_OUT_ODM)/etc/camera/165_C50D.png \
+    vendor/xiaomi/malachite/proprietary/odm/etc/camera/166_F50.png:$(TARGET_COPY_OUT_ODM)/etc/camera/166_F50.png \
+    vendor/xiaomi/malachite/proprietary/odm/etc/camera/167_CC.png:$(TARGET_COPY_OUT_ODM)/etc/camera/167_CC.png \
+    vendor/xiaomi/malachite/proprietary/odm/etc/camera/168_NC.png:$(TARGET_COPY_OUT_ODM)/etc/camera/168_NC.png \
     vendor/xiaomi/malachite/proprietary/odm/etc/camera/CameraImageSize.json:$(TARGET_COPY_OUT_ODM)/etc/camera/CameraImageSize.json \
     vendor/xiaomi/malachite/proprietary/odm/etc/camera/CameraImageSize_gl.json:$(TARGET_COPY_OUT_ODM)/etc/camera/CameraImageSize_gl.json \
     vendor/xiaomi/malachite/proprietary/odm/etc/camera/CameraImageSize_poco.json:$(TARGET_COPY_OUT_ODM)/etc/camera/CameraImageSize_poco.json \
@@ -25,6 +47,9 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/malachite/proprietary/odm/etc/camera/beauty/beauty_config_gl.json:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/beauty_config_gl.json \
     vendor/xiaomi/malachite/proprietary/odm/etc/camera/beauty/beauty_config_in.json:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/beauty_config_in.json \
     vendor/xiaomi/malachite/proprietary/odm/etc/camera/beauty/beauty_config_ru.json:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/beauty_config_ru.json \
+    vendor/xiaomi/malachite/proprietary/odm/etc/camera/beauty/resources/TStools_default_param.json:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/TStools_default_param.json \
+    vendor/xiaomi/malachite/proprietary/odm/etc/camera/beauty/resources/Version.txt:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/Version.txt \
+    vendor/xiaomi/malachite/proprietary/odm/etc/camera/beauty/resources/default_param.json:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/default_param.json \
     vendor/xiaomi/malachite/proprietary/odm/etc/camera/beauty/resources/model/2722133617:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/model/2722133617 \
     vendor/xiaomi/malachite/proprietary/odm/etc/camera/beauty/resources/render/BuildIn/Material/1166466556_252005700:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/BuildIn/Material/1166466556_252005700 \
     vendor/xiaomi/malachite/proprietary/odm/etc/camera/beauty/resources/render/BuildIn/Material/1166466556_2571257293:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/BuildIn/Material/1166466556_2571257293 \
@@ -338,6 +363,111 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/malachite/proprietary/odm/etc/camera/xiaomi/tpwechatsimplevideo_ext.json:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/tpwechatsimplevideo_ext.json \
     vendor/xiaomi/malachite/proprietary/odm/etc/camera/xiaomi/uwsuperlowlightshot.json:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/uwsuperlowlightshot.json \
     vendor/xiaomi/malachite/proprietary/odm/etc/camera/xiaomi/uwsuperlowlightshot_ext.json:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/uwsuperlowlightshot_ext.json \
+    vendor/xiaomi/malachite/proprietary/odm/etc/camera/xiaomi/watermark/MiSans-Demibold.ttf:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/watermark/MiSans-Demibold.ttf \
+    vendor/xiaomi/malachite/proprietary/odm/etc/camera/xiaomi/watermark/MiSans-Medium.ttf:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/watermark/MiSans-Medium.ttf \
+    vendor/xiaomi/malachite/proprietary/odm/etc/camera/xiaomi/watermark/Roboto-Bold.ttf:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/watermark/Roboto-Bold.ttf \
+    vendor/xiaomi/malachite/proprietary/odm/etc/camera/xiaomi/watermark/Roboto-Medium.ttf:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/watermark/Roboto-Medium.ttf \
+    vendor/xiaomi/malachite/proprietary/odm/etc/camera/xiaomi/watermark/ic_cv_film_logo.png:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/watermark/ic_cv_film_logo.png \
+    vendor/xiaomi/malachite/proprietary/odm/etc/camera/xiaomi/watermark/ic_cv_film_logo_white.png:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/watermark/ic_cv_film_logo_white.png \
+    vendor/xiaomi/malachite/proprietary/odm/etc/camera/xiaomi/watermark/ic_cv_logo.png:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/watermark/ic_cv_logo.png \
+    vendor/xiaomi/malachite/proprietary/odm/etc/camera/xiaomi/watermark/ic_cv_logo_p3.png:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/watermark/ic_cv_logo_p3.png \
+    vendor/xiaomi/malachite/proprietary/odm/etc/camera/xiaomi/watermark/ic_cv_poco_logo.png:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/watermark/ic_cv_poco_logo.png \
+    vendor/xiaomi/malachite/proprietary/odm/etc/camera/xiaomi/watermark/ic_cv_poco_logo_white.png:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/watermark/ic_cv_poco_logo_white.png \
+    vendor/xiaomi/malachite/proprietary/odm/etc/camera/xiaomi/watermark/ic_cv_redmi_logo.png:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/watermark/ic_cv_redmi_logo.png \
+    vendor/xiaomi/malachite/proprietary/odm/etc/camera/xiaomi/watermark/ic_cv_redmi_logo_white.png:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/watermark/ic_cv_redmi_logo_white.png \
+    vendor/xiaomi/malachite/proprietary/odm/etc/camera/xiaomi/watermark/ic_cv_xiaomi_logo.png:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/watermark/ic_cv_xiaomi_logo.png \
+    vendor/xiaomi/malachite/proprietary/odm/etc/camera/xiaomi/watermark/ic_cv_xiaomi_logo_white.png:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/watermark/ic_cv_xiaomi_logo_white.png \
+    vendor/xiaomi/malachite/proprietary/odm/etc/camera/xiaomi/watermark/ic_wp_0100_c.webp:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/watermark/ic_wp_0100_c.webp \
+    vendor/xiaomi/malachite/proprietary/odm/etc/camera/xiaomi/watermark/ic_wp_0101.webp:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/watermark/ic_wp_0101.webp \
+    vendor/xiaomi/malachite/proprietary/odm/etc/camera/xiaomi/watermark/ic_wp_0101_c.webp:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/watermark/ic_wp_0101_c.webp \
+    vendor/xiaomi/malachite/proprietary/odm/etc/camera/xiaomi/watermark/ic_wp_0214.webp:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/watermark/ic_wp_0214.webp \
+    vendor/xiaomi/malachite/proprietary/odm/etc/camera/xiaomi/watermark/ic_wp_0601.webp:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/watermark/ic_wp_0601.webp \
+    vendor/xiaomi/malachite/proprietary/odm/etc/camera/xiaomi/watermark/ic_wp_0815_c.webp:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/watermark/ic_wp_0815_c.webp \
+    vendor/xiaomi/malachite/proprietary/odm/etc/camera/xiaomi/watermark/ic_wp_1208_c.webp:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/watermark/ic_wp_1208_c.webp \
+    vendor/xiaomi/malachite/proprietary/odm/etc/camera/xiaomi/watermark/ic_wp_1225.webp:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/watermark/ic_wp_1225.webp \
+    vendor/xiaomi/malachite/proprietary/odm/etc/camera/xiaomi/watermark/ic_wp_agra_fort.webp:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/watermark/ic_wp_agra_fort.webp \
+    vendor/xiaomi/malachite/proprietary/odm/etc/camera/xiaomi/watermark/ic_wp_amber_fort.webp:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/watermark/ic_wp_amber_fort.webp \
+    vendor/xiaomi/malachite/proprietary/odm/etc/camera/xiaomi/watermark/ic_wp_beauty_charm.webp:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/watermark/ic_wp_beauty_charm.webp \
+    vendor/xiaomi/malachite/proprietary/odm/etc/camera/xiaomi/watermark/ic_wp_beijing.webp:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/watermark/ic_wp_beijing.webp \
+    vendor/xiaomi/malachite/proprietary/odm/etc/camera/xiaomi/watermark/ic_wp_bluesky.webp:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/watermark/ic_wp_bluesky.webp \
+    vendor/xiaomi/malachite/proprietary/odm/etc/camera/xiaomi/watermark/ic_wp_buddha.webp:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/watermark/ic_wp_buddha.webp \
+    vendor/xiaomi/malachite/proprietary/odm/etc/camera/xiaomi/watermark/ic_wp_cat.webp:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/watermark/ic_wp_cat.webp \
+    vendor/xiaomi/malachite/proprietary/odm/etc/camera/xiaomi/watermark/ic_wp_cat_c.webp:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/watermark/ic_wp_cat_c.webp \
+    vendor/xiaomi/malachite/proprietary/odm/etc/camera/xiaomi/watermark/ic_wp_chengdu.webp:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/watermark/ic_wp_chengdu.webp \
+    vendor/xiaomi/malachite/proprietary/odm/etc/camera/xiaomi/watermark/ic_wp_chongqing.webp:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/watermark/ic_wp_chongqing.webp \
+    vendor/xiaomi/malachite/proprietary/odm/etc/camera/xiaomi/watermark/ic_wp_cloudy.webp:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/watermark/ic_wp_cloudy.webp \
+    vendor/xiaomi/malachite/proprietary/odm/etc/camera/xiaomi/watermark/ic_wp_coconut_tree.webp:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/watermark/ic_wp_coconut_tree.webp \
+    vendor/xiaomi/malachite/proprietary/odm/etc/camera/xiaomi/watermark/ic_wp_coffee.webp:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/watermark/ic_wp_coffee.webp \
+    vendor/xiaomi/malachite/proprietary/odm/etc/camera/xiaomi/watermark/ic_wp_coffee_c.webp:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/watermark/ic_wp_coffee_c.webp \
+    vendor/xiaomi/malachite/proprietary/odm/etc/camera/xiaomi/watermark/ic_wp_cow.webp:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/watermark/ic_wp_cow.webp \
+    vendor/xiaomi/malachite/proprietary/odm/etc/camera/xiaomi/watermark/ic_wp_curry.webp:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/watermark/ic_wp_curry.webp \
+    vendor/xiaomi/malachite/proprietary/odm/etc/camera/xiaomi/watermark/ic_wp_delicacy.webp:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/watermark/ic_wp_delicacy.webp \
+    vendor/xiaomi/malachite/proprietary/odm/etc/camera/xiaomi/watermark/ic_wp_diwali.webp:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/watermark/ic_wp_diwali.webp \
+    vendor/xiaomi/malachite/proprietary/odm/etc/camera/xiaomi/watermark/ic_wp_dog.webp:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/watermark/ic_wp_dog.webp \
+    vendor/xiaomi/malachite/proprietary/odm/etc/camera/xiaomi/watermark/ic_wp_dog_c.webp:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/watermark/ic_wp_dog_c.webp \
+    vendor/xiaomi/malachite/proprietary/odm/etc/camera/xiaomi/watermark/ic_wp_dussehra.webp:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/watermark/ic_wp_dussehra.webp \
+    vendor/xiaomi/malachite/proprietary/odm/etc/camera/xiaomi/watermark/ic_wp_elephant_god.webp:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/watermark/ic_wp_elephant_god.webp \
+    vendor/xiaomi/malachite/proprietary/odm/etc/camera/xiaomi/watermark/ic_wp_fleshiness.webp:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/watermark/ic_wp_fleshiness.webp \
+    vendor/xiaomi/malachite/proprietary/odm/etc/camera/xiaomi/watermark/ic_wp_flower.webp:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/watermark/ic_wp_flower.webp \
+    vendor/xiaomi/malachite/proprietary/odm/etc/camera/xiaomi/watermark/ic_wp_gateway_delhi.webp:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/watermark/ic_wp_gateway_delhi.webp \
+    vendor/xiaomi/malachite/proprietary/odm/etc/camera/xiaomi/watermark/ic_wp_gateway_mumbai.webp:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/watermark/ic_wp_gateway_mumbai.webp \
+    vendor/xiaomi/malachite/proprietary/odm/etc/camera/xiaomi/watermark/ic_wp_grassplot.webp:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/watermark/ic_wp_grassplot.webp \
+    vendor/xiaomi/malachite/proprietary/odm/etc/camera/xiaomi/watermark/ic_wp_great_wall.webp:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/watermark/ic_wp_great_wall.webp \
+    vendor/xiaomi/malachite/proprietary/odm/etc/camera/xiaomi/watermark/ic_wp_gu_lang_island.webp:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/watermark/ic_wp_gu_lang_island.webp \
+    vendor/xiaomi/malachite/proprietary/odm/etc/camera/xiaomi/watermark/ic_wp_guangzhou.webp:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/watermark/ic_wp_guangzhou.webp \
+    vendor/xiaomi/malachite/proprietary/odm/etc/camera/xiaomi/watermark/ic_wp_hang_ya_cave.webp:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/watermark/ic_wp_hang_ya_cave.webp \
+    vendor/xiaomi/malachite/proprietary/odm/etc/camera/xiaomi/watermark/ic_wp_hangzhou.webp:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/watermark/ic_wp_hangzhou.webp \
+    vendor/xiaomi/malachite/proprietary/odm/etc/camera/xiaomi/watermark/ic_wp_happy_time.webp:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/watermark/ic_wp_happy_time.webp \
+    vendor/xiaomi/malachite/proprietary/odm/etc/camera/xiaomi/watermark/ic_wp_holi.webp:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/watermark/ic_wp_holi.webp \
+    vendor/xiaomi/malachite/proprietary/odm/etc/camera/xiaomi/watermark/ic_wp_huoguo.webp:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/watermark/ic_wp_huoguo.webp \
+    vendor/xiaomi/malachite/proprietary/odm/etc/camera/xiaomi/watermark/ic_wp_kids.webp:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/watermark/ic_wp_kids.webp \
+    vendor/xiaomi/malachite/proprietary/odm/etc/camera/xiaomi/watermark/ic_wp_kids_c.webp:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/watermark/ic_wp_kids_c.webp \
+    vendor/xiaomi/malachite/proprietary/odm/etc/camera/xiaomi/watermark/ic_wp_leafs.webp:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/watermark/ic_wp_leafs.webp \
+    vendor/xiaomi/malachite/proprietary/odm/etc/camera/xiaomi/watermark/ic_wp_monkey.webp:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/watermark/ic_wp_monkey.webp \
+    vendor/xiaomi/malachite/proprietary/odm/etc/camera/xiaomi/watermark/ic_wp_motorcycle.webp:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/watermark/ic_wp_motorcycle.webp \
+    vendor/xiaomi/malachite/proprietary/odm/etc/camera/xiaomi/watermark/ic_wp_mount_huang.webp:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/watermark/ic_wp_mount_huang.webp \
+    vendor/xiaomi/malachite/proprietary/odm/etc/camera/xiaomi/watermark/ic_wp_namaste.webp:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/watermark/ic_wp_namaste.webp \
+    vendor/xiaomi/malachite/proprietary/odm/etc/camera/xiaomi/watermark/ic_wp_nanjing.webp:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/watermark/ic_wp_nanjing.webp \
+    vendor/xiaomi/malachite/proprietary/odm/etc/camera/xiaomi/watermark/ic_wp_nightscape.webp:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/watermark/ic_wp_nightscape.webp \
+    vendor/xiaomi/malachite/proprietary/odm/etc/camera/xiaomi/watermark/ic_wp_overcast.webp:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/watermark/ic_wp_overcast.webp \
+    vendor/xiaomi/malachite/proprietary/odm/etc/camera/xiaomi/watermark/ic_wp_party_time.webp:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/watermark/ic_wp_party_time.webp \
+    vendor/xiaomi/malachite/proprietary/odm/etc/camera/xiaomi/watermark/ic_wp_plants.webp:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/watermark/ic_wp_plants.webp \
+    vendor/xiaomi/malachite/proprietary/odm/etc/camera/xiaomi/watermark/ic_wp_rakhi.webp:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/watermark/ic_wp_rakhi.webp \
+    vendor/xiaomi/malachite/proprietary/odm/etc/camera/xiaomi/watermark/ic_wp_red_fort.webp:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/watermark/ic_wp_red_fort.webp \
+    vendor/xiaomi/malachite/proprietary/odm/etc/camera/xiaomi/watermark/ic_wp_republic_day.webp:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/watermark/ic_wp_republic_day.webp \
+    vendor/xiaomi/malachite/proprietary/odm/etc/camera/xiaomi/watermark/ic_wp_shanghai.webp:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/watermark/ic_wp_shanghai.webp \
+    vendor/xiaomi/malachite/proprietary/odm/etc/camera/xiaomi/watermark/ic_wp_sunrise_sunset.webp:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/watermark/ic_wp_sunrise_sunset.webp \
+    vendor/xiaomi/malachite/proprietary/odm/etc/camera/xiaomi/watermark/ic_wp_super_moon_airplane.webp:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/watermark/ic_wp_super_moon_airplane.webp \
+    vendor/xiaomi/malachite/proprietary/odm/etc/camera/xiaomi/watermark/ic_wp_super_moon_black_cat.webp:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/watermark/ic_wp_super_moon_black_cat.webp \
+    vendor/xiaomi/malachite/proprietary/odm/etc/camera/xiaomi/watermark/ic_wp_super_moon_branch_bird.webp:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/watermark/ic_wp_super_moon_branch_bird.webp \
+    vendor/xiaomi/malachite/proprietary/odm/etc/camera/xiaomi/watermark/ic_wp_super_moon_cable_car.webp:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/watermark/ic_wp_super_moon_cable_car.webp \
+    vendor/xiaomi/malachite/proprietary/odm/etc/camera/xiaomi/watermark/ic_wp_super_moon_climb.webp:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/watermark/ic_wp_super_moon_climb.webp \
+    vendor/xiaomi/malachite/proprietary/odm/etc/camera/xiaomi/watermark/ic_wp_super_moon_flying_bird.webp:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/watermark/ic_wp_super_moon_flying_bird.webp \
+    vendor/xiaomi/malachite/proprietary/odm/etc/camera/xiaomi/watermark/ic_wp_super_moon_leaf.webp:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/watermark/ic_wp_super_moon_leaf.webp \
+    vendor/xiaomi/malachite/proprietary/odm/etc/camera/xiaomi/watermark/ic_wp_super_moon_text_1.webp:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/watermark/ic_wp_super_moon_text_1.webp \
+    vendor/xiaomi/malachite/proprietary/odm/etc/camera/xiaomi/watermark/ic_wp_super_moon_text_2.webp:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/watermark/ic_wp_super_moon_text_2.webp \
+    vendor/xiaomi/malachite/proprietary/odm/etc/camera/xiaomi/watermark/ic_wp_super_moon_text_3.webp:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/watermark/ic_wp_super_moon_text_3.webp \
+    vendor/xiaomi/malachite/proprietary/odm/etc/camera/xiaomi/watermark/ic_wp_super_moon_text_4.webp:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/watermark/ic_wp_super_moon_text_4.webp \
+    vendor/xiaomi/malachite/proprietary/odm/etc/camera/xiaomi/watermark/ic_wp_super_moon_text_5.webp:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/watermark/ic_wp_super_moon_text_5.webp \
+    vendor/xiaomi/malachite/proprietary/odm/etc/camera/xiaomi/watermark/ic_wp_super_moon_text_7.webp:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/watermark/ic_wp_super_moon_text_7.webp \
+    vendor/xiaomi/malachite/proprietary/odm/etc/camera/xiaomi/watermark/ic_wp_super_moon_text_8.webp:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/watermark/ic_wp_super_moon_text_8.webp \
+    vendor/xiaomi/malachite/proprietary/odm/etc/camera/xiaomi/watermark/ic_wp_super_moon_window.webp:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/watermark/ic_wp_super_moon_window.webp \
+    vendor/xiaomi/malachite/proprietary/odm/etc/camera/xiaomi/watermark/ic_wp_suzhou.webp:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/watermark/ic_wp_suzhou.webp \
+    vendor/xiaomi/malachite/proprietary/odm/etc/camera/xiaomi/watermark/ic_wp_suzhou_gardens.webp:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/watermark/ic_wp_suzhou_gardens.webp \
+    vendor/xiaomi/malachite/proprietary/odm/etc/camera/xiaomi/watermark/ic_wp_taj_mahal.webp:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/watermark/ic_wp_taj_mahal.webp \
+    vendor/xiaomi/malachite/proprietary/odm/etc/camera/xiaomi/watermark/ic_wp_temple_of_heaven.webp:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/watermark/ic_wp_temple_of_heaven.webp \
+    vendor/xiaomi/malachite/proprietary/odm/etc/camera/xiaomi/watermark/ic_wp_the_palace_museum.webp:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/watermark/ic_wp_the_palace_museum.webp \
+    vendor/xiaomi/malachite/proprietary/odm/etc/camera/xiaomi/watermark/ic_wp_the_potala_palace.webp:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/watermark/ic_wp_the_potala_palace.webp \
+    vendor/xiaomi/malachite/proprietary/odm/etc/camera/xiaomi/watermark/ic_wp_the_summer_palace.webp:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/watermark/ic_wp_the_summer_palace.webp \
+    vendor/xiaomi/malachite/proprietary/odm/etc/camera/xiaomi/watermark/ic_wp_the_terracotta_army.webp:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/watermark/ic_wp_the_terracotta_army.webp \
+    vendor/xiaomi/malachite/proprietary/odm/etc/camera/xiaomi/watermark/ic_wp_tianjin.webp:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/watermark/ic_wp_tianjin.webp \
+    vendor/xiaomi/malachite/proprietary/odm/etc/camera/xiaomi/watermark/ic_wp_tutuk.webp:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/watermark/ic_wp_tutuk.webp \
+    vendor/xiaomi/malachite/proprietary/odm/etc/camera/xiaomi/watermark/ic_wp_underwater.webp:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/watermark/ic_wp_underwater.webp \
+    vendor/xiaomi/malachite/proprietary/odm/etc/camera/xiaomi/watermark/ic_wp_victoria_harbor.webp:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/watermark/ic_wp_victoria_harbor.webp \
+    vendor/xiaomi/malachite/proprietary/odm/etc/camera/xiaomi/watermark/ic_wp_west_lake.webp:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/watermark/ic_wp_west_lake.webp \
+    vendor/xiaomi/malachite/proprietary/odm/etc/camera/xiaomi/watermark/ic_wp_wuhan.webp:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/watermark/ic_wp_wuhan.webp \
+    vendor/xiaomi/malachite/proprietary/odm/etc/camera/xiaomi/watermark/ic_wp_zhang_jia_jie.webp:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/watermark/ic_wp_zhang_jia_jie.webp \
+    vendor/xiaomi/malachite/proprietary/odm/etc/camera/xiaomi/watermark/noise_logo.png:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/watermark/noise_logo.png \
     vendor/xiaomi/malachite/proprietary/odm/etc/camera/xiaomiSceneDetection.xml:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomiSceneDetection.xml \
     vendor/xiaomi/malachite/proprietary/odm/etc/libnfc-tms_RF_EC2.conf:$(TARGET_COPY_OUT_ODM)/etc/libnfc-tms_RF_EC2.conf \
     vendor/xiaomi/malachite/proprietary/odm/etc/libnfc-tms_RF_GB1.conf:$(TARGET_COPY_OUT_ODM)/etc/libnfc-tms_RF_GB1.conf \
@@ -1482,7 +1612,11 @@ PRODUCT_PACKAGES += \
     libapuwarexrp.mtk \
     libapuwarexrp_v2.mtk \
     libarmnn_ndk.mtk \
+    libcamera_algoup_jni.xiaomi \
+    libcamera_ispinterface_jni.xiaomi \
+    libcamera_mianode_jni.xiaomi \
     libcmdl_ndk.mtk \
+    libmtkisp_metadata_sys \
     libmvpu_cic_ci_compiler.mtk \
     libmvpu_cic_ci_compiler_25.mtk \
     libmvpu_clc_14_mvpu_elf_25.mtk \
@@ -1520,6 +1654,8 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.apuware.xrp-V1-ndk \
     vendor.mediatek.hardware.apuware.xrp@1.0 \
     vendor.mediatek.hardware.apuware.xrp@2.0 \
+    vendor.mediatek.hardware.camera.isphal-V1-ndk_system_ext \
+    vendor.mediatek.hardware.camera.isphal@1.0 \
     com.xiaomi.plugin.arcrawhdr \
     com.xiaomi.plugin.arcsoftsr \
     com.xiaomi.plugin.asdasync \
@@ -1567,16 +1703,11 @@ PRODUCT_PACKAGES += \
     libHISCppAlgos_odm \
     libdeflicker \
     libhis_motion_tracker_odm \
-    MiuiCamera \
-    libcamera_algoup_jni.xiaomi \
-    libcamera_ispinterface_jni.xiaomi \
-    libcamera_mianode_jni.xiaomi \
-    libmtkisp_metadata_sys \
-    vendor.mediatek.hardware.camera.isphal@1.0 \
     com.google.android.widevine.nonupdatable \
     EuiccGoogle \
     HotwordEnrollmentOKGoogleRISCV \
     HotwordEnrollmentXGoogleRISCV \
+    MiuiCamera \
     com.android.hotwordenrollment.common.util \
     CommandService.xml \
     android.hardware.gatekeeper-service.mitee.xml \
