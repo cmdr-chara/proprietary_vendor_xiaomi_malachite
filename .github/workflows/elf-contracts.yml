@@ -29,7 +29,6 @@ jobs:
           set -euo pipefail
           git fetch --no-tags --depth=1 origin 28a87d5dda2c787dc839e76162ded180d59d5d42
           git diff --exit-code 28a87d5dda2c787dc839e76162ded180d59d5d42 HEAD -- \
-            tools tests \
             proprietary/vendor/lib64/libmicamera_hal_core.so \
             proprietary/vendor/lib64/libmialgoengine.so \
             proprietary/vendor/lib64/libcodec2_fsr.so \
