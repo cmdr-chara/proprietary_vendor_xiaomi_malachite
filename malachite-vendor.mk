@@ -1567,6 +1567,12 @@ PRODUCT_PACKAGES += \
     libHISCppAlgos_odm \
     libdeflicker \
     libhis_motion_tracker_odm \
+    MiuiCamera \
+    libcamera_algoup_jni.xiaomi \
+    libcamera_ispinterface_jni.xiaomi \
+    libcamera_mianode_jni.xiaomi \
+    libmtkisp_metadata_sys \
+    vendor.mediatek.hardware.camera.isphal@1.0 \
     com.google.android.widevine.nonupdatable \
     EuiccGoogle \
     HotwordEnrollmentOKGoogleRISCV \
